@@ -2,8 +2,7 @@ baseURL = "https://red-team-hugo-vlad.netlify.app/"
 languageCode = "en-us"
 title = "Red Team Cybersecurity Portofolio"
 theme = "grid-side"
-RelativeURLs=true
-CanonifyURLs=true
+
 
 [Params.Header]
 
@@ -26,4 +25,4 @@ CanonifyURLs=true
 
         name = "Sections"
         link = "/posts/"
-        image = "/img/server.jpg"
+        image = "/server.jpg"
