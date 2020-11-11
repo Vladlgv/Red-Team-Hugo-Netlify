@@ -1,3 +1,6 @@
 [submodule "hugo-theme-dimension"]
 	path = hugo-theme-dimension
 	url = https://github.com/your-identity/hugo-theme-dimension.git
+[submodule "grid-side"]
+	path = grid-side
+	url = https://github.com/chipsenkbeil/grid-side.git

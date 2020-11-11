@@ -1,4 +1,29 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Red Team Cybersecurity Portofolio"
-theme = "hugo-theme-dimension"
+theme = "grid-side"
+RelativeURLs=true
+CanonifyURLs=true
+
+[Params.Header]
+
+    name = "Red Team Portofolio Cybersecurity"
+    description = "Made by Gabriel Vlad Luca "
+   # email = "your@email.com"
+    image = "path/to/your/header/image"
+
+    [Params.Footer]
+
+    [[Params.Footer.List]]
+
+        icon_class = "github"
+        icon_link = "https://github.com/Vladlgv/Red-Team-Hugo-Netlify.git"
+
+    
+    [Params.Cells]
+
+    [[Params.Cells.List]]
+
+        name = "Sections"
+        link = "/posts/"
+        image = "/img/server.jpg"

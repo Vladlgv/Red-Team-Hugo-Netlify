@@ -1,8 +1,8 @@
----
-title: "RedvsBlue"
-date: 2020-11-06T17:06:01+01:00
-draft: true
----
++++
+title= "RedvsBlue"
+date= 2020-11-06T17:06:01+01:00
+draft= true
++++
 
 ## Event 1
 The  Red vs Blue event took place on Monday 26/10/2020. During this event, the red teamers attacked the applications built by the security engineers. The Blue teamers were tasked with intercepting and identifying the attacks carried out by the red team. As a red teamer I had to run a number of tests to try and find vulnerabilities inside the applications.
@@ -46,27 +46,28 @@ For the second testing period of the event I had my system up and running and I 
 
 In the limited time that I had these were the insights I was able to make.
 
-![pingAllMachines](./images/RedvsBlue/pingAllMachines.png)
+
+![pingAllMachines](/RedvsBlue//pingAllMachines.png)
 #### [Figure 2.1 - Determening active ip] 
 
 Out of the 3 supplied IPs the only one reachable was 128, we believe this was because the other 2 were down. Next time mark them as down or try to set them up in the Test Objectives.
 
-![Nmap](./images/RedvsBlue/NmapScan.png?style=centerme)
+![Nmap](/RedvsBlue//NmapScan.png?style=centerme)
 #### [Figure 2.2 - Initial machine scan] 
 
  The initial nmap revealed port 80 and port 8081 - From a first look Apache is version  2.4.41 which comes with some vulnerabilities.
 
-![Apache vulnerability](./images/RedvsBlue/VulnerabilityforApacheServer.png?style=centerme)
+![Apache vulnerability](/RedvsBlue//VulnerabilityforApacheServer.png?style=centerme)
 #### [Figure 2.3 - Vulnerabilities tied to Apache] 
 
 There are known vulnerabilities for that version of apache including information disclosure and possible Remote Code execution. 
 
-![PoC searched](./images/RedvsBlue/PossibleVulnerability.png?style=centerme)
+![PoC searched](/RedvsBlue/PossibleVulnerability.png?style=centerme)
 #### [Figure 2.4 - ApachePossible Vulnerability] 
 
 While no Proof of Concept was found for the apache a number of vulnerabilites where found on the offcial page for Apache CVEs.
 
-![Missing Multi Factor Authentification](./images/RedvsBlue/MultiFactorBroken.png?style=centerme)
+![Missing Multi Factor Authentification](/RedvsBlue/MultiFactorBroken.png?style=centerme)
 #### [Figure 2.5 - Multi Factor Authentification missing] 
 
 There is no functionality to register and login with multi factor authentication which increases users security.
@@ -75,17 +76,17 @@ Beforehand, we were supplied with credentials that would grant us access to the 
 While using these credentials we have noticed that the login did not work, even if we got a successful request as it can be seen below.
 
 
-![TalkWitAuthor](./images/RedvsBlue/MultiFactorBroken_TalkedWithAuthor.png?style=centerme)
+![TalkWitAuthor](/RedvsBlue/MultiFactorBroken_TalkedWithAuthor.png?style=centerme)
 #### [Figure 2.6 - Portal broken] 
 
 From talking with the creator and from the message given we realised that the backend is not properly configured and therefore any vulnerabilities on port 8081 could not be tested. 
 
 But we believe after fixing this some other things to look into are disallowing the PUT and DELETE methods. Also the icon gives away that the website is using the Angular framework.
 
-![Put Delete error](./images/RedvsBlue/NiktoVulnerabilitiesPutDelete.png?style=centerme)
+![Put Delete error](/RedvsBlue/NiktoVulnerabilitiesPutDelete.png?style=centerme)
 #### [Figure 2.7 - Vulnerabilities left open] 
 
-![SQL injection](./images/RedvsBlue/SQLInjection.png?style=centerme)
+![SQL injection](/RedvsBlue/SQLInjection.png?style=centerme)
 #### [Figure 2.8 - Attempt to exploit PUT DELETE vulnerability] 
 
 Sensitive information is visible in the  request and the website doesn’t force https making it possible for this information to be intercepted using a man in the middle attack. 
