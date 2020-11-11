@@ -1,7 +1,7 @@
 ---
 title: "Learning Plan"
 date: 2020-10-07T19:11:45+02:00
-draft: true
+draft: false
 ---
 
 ## 1.	Who I am:

@@ -1,7 +1,7 @@
 +++
 title= "RedvsBlue"
 date= 2020-11-06T17:06:01+01:00
-draft= true
+draft= false
 +++
 
 ## Event 1
