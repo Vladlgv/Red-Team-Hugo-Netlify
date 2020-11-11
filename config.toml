@@ -1,4 +1,4 @@
-baseURL = "https://5fac3cd9c7d98850a44924e3--red-team-hugo-vlad.netlify.app/"
+baseURL = "https://red-team-hugo-vlad.netlify.app/"
 languageCode = "en-us"
 title = "Red Team Cybersecurity Portofolio"
 theme = "grid-side"
