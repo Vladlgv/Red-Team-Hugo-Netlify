@@ -23,7 +23,7 @@ theme = "grid-side"
 
     [[Params.Cells.List]]
 
-        name = "Sections"
+        name = "R&D Project"
         link = "/posts/"
         image = "/server.jpg"
 
