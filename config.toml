@@ -6,7 +6,7 @@ theme = "grid-side"
 
 [Params.Header]
 
-    name = "Red Team Portofolio Cybersecurity"
+    name = "Team Cybersecurity Portfolio "
     description = "Made by Gabriel Vlad Luca "
    # email = "your@email.com"
     image = "path/to/your/header/image"
@@ -18,18 +18,32 @@ theme = "grid-side"
         icon_class = "github"
         icon_link = "https://github.com/Vladlgv/Red-Team-Hugo-Netlify.git"
 
-    
     [Params.Cells]
 
+
+    [[Params.Cells.List]]
+
+        name = "Learning Plan"
+        link = "/learningplan/"
+        image = "/businessplan.jpg"
+
+     [[Params.Cells.List]]
+
+        name = "Personal Progress"
+        link = "/personalprogress/"
+        image = "/progress.png"
+    
     [[Params.Cells.List]]
 
         name = "R&D Project"
         link = "/posts/"
-        image = "/server.jpg"
+        image = "/rdproject.png"
 
-     [[Params.Cells.List]]
+    [[Params.Cells.List]]
 
-        name = "WriteUps"
+        name = "Write Ups"
         link = "/writeups/"
         image = "/writeup.jpg"
+
+
 

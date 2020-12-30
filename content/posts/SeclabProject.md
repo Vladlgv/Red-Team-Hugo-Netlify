@@ -70,3 +70,7 @@ Furthermore after successfully setting up the server I was able to write a scrip
 ![Working script](/Seclab-Project/Script_Working.png?style=centerme)
 ##### [Figure 1.3 - Working script] 
 
+
+### Sprint 2, week 9-12 (Nov 2 -Nov 27)
+
+### Sprint 3, week 13-17 (Nov 30 -Jan 18)

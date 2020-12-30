@@ -6,7 +6,7 @@
         padding: 15px 25px;
         margin: 0 auto;
     ">
-        {{ with .name }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .name }}<h2> <span style="color:crimson;">Red</span> {{ . }}{{ end }}
         {{ with .email }}<h5>{{ . }}</h5>{{ end }}
         {{ with .description }}
             <h2><hr></h2>

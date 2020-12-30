@@ -2,6 +2,7 @@
 title: "BrainFuck"
 date: 2020-11-14T18:27:23+01:00
 draft: false
+
 ---
 
 #### Machine Skills
