@@ -1,9 +1,9 @@
-+++
-title= "Red vs Blue | Event 1"
-date= 2020-10-26T17:06:01+01:00
-draft= false
-summary = "Description of the first red vs blue team event. "
-+++
+---
+title: "Red vs Blue | Event 1"
+date: 2020-10-26T17:06:01+01:00
+draft: false
+summary : "Description of the first red vs blue team event. "
+---
 
 ## Event 1
 The  Red vs Blue event took place on Monday 26/10/2020. During this event, the red teamers attacked the applications built by the security engineers. The Blue teamers were tasked with intercepting and identifying the attacks carried out by the red team. As a red teamer I had to run a number of tests to try and find vulnerabilities inside the applications.

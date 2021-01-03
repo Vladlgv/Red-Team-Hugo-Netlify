@@ -1,9 +1,10 @@
-+++
-title= "Red vs Blue | Event 2"
-date= 2020-12-14T17:06:01+01:00
-draft= false
-summary= ""
-+++
+---
+title: "Red vs Blue | Event 2"
+date: 2020-12-14T17:06:01+01:00
+draft: false
+summary: "The description of the second Red vs Blue event
+"
+---
 
 ## Event 2
 The  Red vs Blue event took place on Monday 14/12/2020. Similar to the previous event the goal of the red team was to attack the applications created by the green team students. In the meanwhile the blue team was tasked with monitoring the activities of the red team and identifying their activities inside the network.

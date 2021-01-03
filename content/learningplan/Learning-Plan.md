@@ -2,7 +2,7 @@
 title: "Learning Plan"
 date: 2020-10-07T19:11:45+02:00
 draft: false
-sumarry: "A introduction and a plan on how the project will take place"
+summary: "A introduction and a plan on how the project will take place"
 ---
 
 ## 1.	Who I am:

@@ -2,6 +2,7 @@
 title: "Weekly advancement"
 date: 2020-10-19T10:18:24+02:00
 draft: false
+summary: "A week by week explenation of the activities underwent. Will add links to respective work per week inside the project"
 ---
 
 

@@ -1,10 +1,9 @@
-+++
-title= "Lock picking"
-date= 2020-12-14T17:06:01+01:00
-draft= false
-summary= "The goal of lock picking is as simple as to open a lock."
-
-+++
+---
+title: "Lock picking"
+date: 2020-12-14T17:06:01+01:00
+draft: false
+summary: "The goal of lock picking is as simple as to open a lock."
+---
 
 ### What is Lock picking?
 
