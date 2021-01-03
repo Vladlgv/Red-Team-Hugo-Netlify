@@ -1,7 +1,7 @@
 ---
 title: "Weekly advancement"
 date: 2020-10-19T10:18:24+02:00
-draft: true
+draft: false
 ---
 
 

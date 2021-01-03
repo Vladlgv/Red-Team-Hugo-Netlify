@@ -2,6 +2,7 @@
 title: "Lame"
 date: 2020-11-14T19:52:15+01:00
 draft: false
+summary: "This is a beginer box that I owned all you need to do is know how to use metaexploit"
 ---
 
 #### Machine Skills

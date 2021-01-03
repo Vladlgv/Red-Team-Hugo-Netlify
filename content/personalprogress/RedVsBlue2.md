@@ -1,7 +1,8 @@
 +++
 title= "Red vs Blue | Event 2"
 date= 2020-12-14T17:06:01+01:00
-draft= true
+draft= false
+summary= ""
 +++
 
 ## Event 2

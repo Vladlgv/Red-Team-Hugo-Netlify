@@ -1,7 +1,9 @@
 +++
 title= "Lock picking"
 date= 2020-12-14T17:06:01+01:00
-draft= true
+draft= false
+summary= "The goal of lock picking is as simple as to open a lock."
+
 +++
 
 ### What is Lock picking?
@@ -59,6 +61,16 @@ The most valuable trick that was learned while trying the various techniques was
 
 
 
+![LockPick](/Lockpick/scrapeTool.jpg)
+![LockPick](/Lockpick/hookTool.jpg)
+ ##### [Figure 1.1 - Tools used]
+
+{{<youtube vWy_onA0K4E >}}
+ ##### [Video 1 - Breaking into the lock with a racker]
+
+ Video 1 showcases how I opened the first lock using the city rake lock pick. As it can be seen in the video opening the easy lock takes a matter of seconds using the scraping technique.
+
+
 #### Second lock (medium)
 
 This lock proved to be more difficult in the begining as I did not understand how it functioned. In reality it was quite a simple lock but what I needed to do was find the right technique to use on it.
@@ -69,6 +81,12 @@ Finally, after a bit of head scratching the realization came that zipping the lo
 
 As such, the lesson was that not all locks are the same and different locks may require a different technique.
 
+{{<youtube _JsqHEr9460>}}
+ ##### [Video 2 - Breaking into the lock using the ziping method]
+For the second lock I used a ball end pick lock that was ideal for zipping the lock.
+In addition to that the lock was a bit more difficult as it had 2 different ends that at first seemed to have different solutions. However, using different techniques did not prove any more useful.
+
+
 #### Third lock (hard)
 
 Out of the three practice locks the third lock was the most difficult one. That is because there was no particular trick to it. The only way to open it was with the single pin picking method. I had to move each and every one pin in place without any tricks or fast method techniques. 
@@ -76,6 +94,13 @@ Out of the three practice locks the third lock was the most difficult one. That 
 Furthermore, because it was such a hard lock to pick opening it was harder to practice. In the end, when a satisfactory result was achieved, it took 15 minutes to open the lock. Probably with more practice and a more experienced lock picker this lock could be opened in 5 minutes or maybe 2. 
 
 The lesson learned from this lock is that lock picking is a skill set after all and the more practice you put into the harder but universal techniques the easier it will be to pick locks.
+
+![LockPick](/Lockpick/3rdlockProof.jpg)
+ ##### [Figure 1.2 - proof for opening the 3rd lock]
+ I tried to open the 3rd lock on video but it took too much so I could not film the whole process. It took anywhere from 5 minutes to 20 minutes to open this lock. The problem is that with this one there are no easy ways to open it. One needs to pick each pin individually which requires more skill and finess.
+
+{{<youtube WbSXNJU4b1s>}}
+##### [Video 3 - Attempt to break into the hard lock on screen]
 
 #### Room Lock (Hardest)
 

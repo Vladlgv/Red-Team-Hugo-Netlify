@@ -2,6 +2,7 @@
 title: "Learning Plan"
 date: 2020-10-07T19:11:45+02:00
 draft: false
+sumarry: "A introduction and a plan on how the project will take place"
 ---
 
 ## 1.	Who I am:
@@ -96,7 +97,31 @@ Web applications attacks|
 |Learn how to do reversing of smartphone apps|Done separately|
 |Find a couple of red teaming and pen-tester vacancies with job descriptions and analyze what task and skills are described. Add to and update your learning plan as needed.|Included in the OSCP process|
 
-## 2.4. Time divided activities per week
+## 2.4.1 Time divided activities per week
+***
+
+
+| Week          | Goal          |
+| ------------- |:-------------:
+|Week 1 (31/08 – 04/09)| Find out agenda |
+Week 2 (07/09 – 11/09) |	Hack the Box + kali Linux |
+Week 3 (14/09 – 18/09) |	Hack a box + Report Website
+Week 4 (21/09 – 25/09) |	Hack the box + Report Website
+Week 5 (28/09 – 02/10) |	Buy OSCP lab time; Read Documentation
+Week 6 (05/10 – 09/10) |	OSCP - Start Lab
+Week 7 (12/10 – 16/10) |	OSCP - Buffer Overflow
+Week 8 (19/10 – 23/10) |	OSCP – Enumeration learn NMAP flags
+Week 9 (02/11 – 06/11) |	OSCP – Shell exploitation
+Week 10 (09/11 – 13/11) |	OSCP – Privilege Escalation windows
+Week 11 (16/11 – 20/11) |	OSCP- Linux Privilege Escalation
+Week 12 (23/11 – 27/11) |	OSCP – Bash scripting
+Week 13 (30/11 – 04/12) |	OSCP – Buffer Overflow
+Week 14 (07/12 – 11/12) |	OSCP – report setup
+Week 15 (14/12 – 18/12) |	OSCP - Program
+Week 16 (04/01 – 08/01) |	OSCP - Program
+Week 17 (11/01 – 15/01) |	Physical penetration and Social approach
+
+## 2.4.1 Revissed time table based on current situation.
 ***
 
 

@@ -1,7 +1,9 @@
 ---
 title: "Seclab-Project"
-date: 2020-11-05T13:10:54+01:00
+date: 2020-12-08T13:10:54+01:00
 draft: false
+summary: "
+An overview of the project conducted together with a team of 6 other students with the goal of researching and developing ways to improve the Netlab environment monitoring system."
 ---
 
 ### Project Description
@@ -73,4 +75,68 @@ Furthermore after successfully setting up the server I was able to write a scrip
 
 ### Sprint 2, week 9-12 (Nov 2 -Nov 27)
 
+Based on the Sprint meeting that was held together with the newly assigned PO (Product Owner), Mr. Schellekens Casper, and the network administrators that are responsible for the Netlab environment the team formed new sprint goals.
+
+During the sprint meeting I personally was responsible for presenting the overall situation of the project and to conduct the conversation with the PO in order to showcase our current work, clarify our goals and receive feedback on how the project should proceed.
+
+![Sprint Goals](/Seclab-Project/Sprint2planing.png)
+##### [Figure 2.1 - Sprint 2 goals ] 
+
+As send in Figure 2.1, the team decided on the next sprints goals based on the feedback that was received during the sprint meeting. As SCRUM master I organized the board together with the team and made sure that everyone has clear tasks. 
+
+One of the main concerns during the Sprint 2 meeting was the lack of a good dashboard wireframes. Therefore, one of the main goals of the second sprint was to create the dashboard frontend and the graphs that would be displayed in it so as to showcase it to review it and approve it during the next Sprint meeting.
+
+![Sprint Goals](/Seclab-Project/Activities.png)
+##### [ Figure 2.2 - Website making activities]
+![Sprint Goals](/Seclab-Project/Activities2.png)
+##### [Figure 2.3 - Website making activities]
+
+This task was divided between me and Alex Petrov, and Marc Dane. Because the team did not have a lot of experience with web development we had to spend the first week researching Angular the chosen framework. During the research process I found a pre-made dashboard solution ngx-admin. This was a dashboard solution with a lot of front-end elements that greatly helped  us speed up the process of creating a dashboard.
+
+![Sprint Goals](/Seclab-Project/DashboardUserPage.png)
+##### [Figure 2.4 - Dashboard made in Angular]
+
+At the end of the Sprint due to difficulties that came from 2 of our group members quiting the project we only got one out of three pages done. The User page that I was tasked with finishing. The page featured some of the graphs that could be displayed and the overall look of the website.
+
+In addition the page also featured the Grafana dashboards that were added with the help of Loek Vogels. The look of the dashboard was approved by both the PO and the network administrators of Netlab.
+
+Furthermore, in order to coordinate between all team members we used a new version control system to me, Azure repos. Due to some difficulties the repo had to be reset a few times but in the end the team manged to sync all their work. The repository can be found [here](https://dev.azure.com/SeclabRDFontys/_git/SeclabNgAdminDashboardBase). 
+
+If you do not have permissions to see the repository contact the repository admin, Gabriel Vlad Luca.
+
+![Sprint Goals](/Seclab-Project/QuesionBord.png)
+##### [Figure 2.5 - Question Board]
+
+To keep track of all the questions we had we used a trello board and the main channel of communication was Teams as emails seemed to be too slow and daily meetings were not possible due to the Corona situation.
+
+
+![Sprint Goals](/Seclab-Project/FormSurvey.png)
+##### [Figure 2.6 - Survey for dashboard graphs and information]
+At the end of the sprint at the suggestion of the PO, I worked on a Survey to better understand the metrics that were needed by the users of Netlab. The survey was distributed to with the help of the PO to students in the cyber specialization, to infrastructure students, and cybersecurity minor students. In total 21 individuals participated in the survey.
+
+The goal of the survey was to find additional graphs and information to add to the dashboards. This goal was achieved and in addition the survey participants also came with unique ways to visualize and take advantage of the data that we collect for this project.
+
+In addition to working on the dashboard and survey as the group leader I was tasked with  the communication between the group and the PO, I was responsible for communicating our meetings, questions and necessary resources to conduct the project.
+
+
+
 ### Sprint 3, week 13-17 (Nov 30 -Jan 18)
+
+At the end of the second sprint another sprint meeting was conducted. The discussed points can also be found in the [minutes](https://stichtingfontys.sharepoint.com/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/Gedeelde%20documenten/FHICT%20research%20and%20development%20project/Minutes/Notes_26_11_2020.txt). All minutes for all meetings conducted can be found in the teams [shared folder](https://teams.microsoft.com/_#/school/files/FHICT%20research%20and%20development%20project?threadId=19%3A5d69e2a976384993af588f7e4a8c8ca3%40thread.skype&ctx=channel&context=Minutes&rootfolder=%252Fsites%252FCyberSecurityMinor20192020-FHICTresearchanddevelopmentproject%252FGedeelde%2520documenten%252FFHICT%2520research%2520and%2520development%2520project%252FMinutes)
+
+During the 3rd sprint meeting I presented the updates on the Dashboard and the Survey results. Overall the shareholders that were present at the meeting were very pleased with the progress that was made for this sprint.
+
+As a result of the feedback they gave the team we decided that the most important goal for the 3rd and last sprint was to deliver working dashboards based on the survey and needs of the shareholders. On top of that suitable documentation should come with all deliverables. Finally they wanted us to integrate our scripts and our test environment machines inside the Netlab environment.
+
+
+![Sprint Goals](/Seclab-Project/sprint3board.png)
+##### [Figure 3.1 - Sprint 3 goals]
+To keep track of the sprint goals we used the same method as before, Trello boards. Because 2 of the group members left we had to split these 3 tasks between the 5 remaining members. Te website would be done by Loek, Marc and me and the scripts would be finished by Melanie and Koen. 
+
+
+
+![Sprint Goals](/Seclab-Project/Sprint3tasks.png)
+##### [Figure 3.2 - Sprint 3 weekly tasks]
+To keep track of the weekly tasks we conducted weekly meetings where I as the scrum leader together with the other members would decide how we would break down the major deliverable goals into smaller weekly assignments that we could track.
+
+Each task was assigned to the respective team member that is responsible for it and time limit so we would keep the team focused on the deadlines. On top of this the reason why we chose to keep track of the work through trello boards is because it is easy to visualize the workload each member of the team participated with.

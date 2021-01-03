@@ -2,6 +2,7 @@
 title: "BrainFuck"
 date: 2020-11-14T18:27:23+01:00
 draft: false
+summary: "With this machine I learned about cryptography how it is used and another way to do privileage  escalation"
 
 ---
 

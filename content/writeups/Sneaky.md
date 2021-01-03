@@ -2,6 +2,7 @@
 title: "Sneaky"
 date: 2020-11-12T08:08:23+01:00
 draft: false
+summary: "This machine has thought me more about working with ipv6 how to calculate and it from its decimal number and it was a great bufer overflow example."
 ---
 
 

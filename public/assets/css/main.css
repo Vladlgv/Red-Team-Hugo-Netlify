@@ -280,6 +280,8 @@ input, select, textarea {
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
 			overflow-x: auto;
+			background: #272822;
+    		color: #f8f8f2;
 		}
 
 	hr {

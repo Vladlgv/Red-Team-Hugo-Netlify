@@ -2,6 +2,7 @@
 title: "SwagBox"
 date: 2020-11-14T17:47:06+01:00
 draft: false
+summary: "This machine is used to learn more about the common Magento shop platform and to use a service such as vim for privileage escalation. With this machine I have practiced the common steps needed for penetration testing. This is said because the machine is classified as an easy machine. "
 ---
 
 #### Machine Skills
