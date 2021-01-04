@@ -290,6 +290,7 @@ user.txt
 cat user.txt
 a448877277e82f05e5ddf9f90aefbac8
 echo "$USER"
+
 ---
 ### Step 4 - Privilage Escalation
 ---

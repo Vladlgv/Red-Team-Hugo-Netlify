@@ -134,16 +134,16 @@ Week 4 (21/09 – 25/09) |	Hack the box + Report Website
 Week 5 (28/09 – 02/10) |	Buy OSCP lab time; Read Documentation
 Week 6 (05/10 – 09/10) |	OSCP - Start Lab
 Week 7 (12/10 – 16/10) |	OSCP - Buffer Overflow
-Week 8 (19/10 – 23/10) |	OSCP – Enumeration learn NMAP flags
-Week 9 (02/11 – 06/11) |	OSCP – Shell exploitation
-Week 10 (09/11 – 13/11) |	OSCP – Privilege Escalation windows
-Week 11 (16/11 – 20/11) |	OSCP- Linux Privilege Escalation
-Week 12 (23/11 – 27/11) |	OSCP – Bash scripting
-Week 13 (30/11 – 04/12) |	OSCP – Buffer Overflow
-Week 14 (07/12 – 11/12) |	OSCP – report setup
-Week 15 (14/12 – 18/12) |	OSCP - Program
-Week 16 (04/01 – 08/01) |	OSCP - Program
-Week 17 (11/01 – 15/01) |	Physical penetration and Social approach
+Week 8 (19/10 – 23/10) |	OSCP –  work on lab exercises + start OSCP lab
+Week 9 (02/11 – 06/11) |	Update Portfolio + OSCP lab machines
+Week 10 (09/11 – 13/11) |	OSCP – Buffer Overflow windows
+Week 11 (16/11 – 20/11) |	OSCP- Buffer Overflow lab machines practice + 5 chapter lab exercises.
+Week 12 (23/11 – 27/11) |	OSCP – 4 machines minimum user in lab + 5 chapters lab exercises 
+Week 13 (30/11 – 04/12) |	Start Lock picking + OSCP – Lab exercises chapters + OSCP lab machines
+Week 14 (07/12 – 11/12) |	Lock picking + OSCP lab machines 
+Week 15 (14/12 – 18/12) |	Red team vs blue team Event 2 + OSCP lab machines
+Week 16 (04/01 – 08/01) |	Report Website portfolio work on OSCP lab exercises
+Week 17 (11/01 – 15/01) |	Report Website portfolio work on OSCP lab exercises
 
 
 ### Classification of priorities 

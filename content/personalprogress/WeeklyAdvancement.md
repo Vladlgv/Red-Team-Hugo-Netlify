@@ -128,7 +128,7 @@ For the next R vs B event I will make sure that my Seclab credentials are workin
 ### Week 9
 02/11/2020 – 06/11/2020
 
-__Goal -Website update–__
+__Goal -Website update + OSCP lab–__
 
 While work was done on the group  and on the personal portfolio assignments less time was invested into actually making the website and recording the work that was done. Because of this, updating the website so it contained my work for the midpoint hand-in was the priority of this week. Furthermore, because the main framework used to serve the website was Hugo, there were some problems with the provider to deploy the website.
 
@@ -136,8 +136,10 @@ At first the platform used for deploying the website was Heroku. This had a modu
 
 Moreover, the Heroku was interpreting the css but it did not deploy the website entirely because of the faulty and old github module that was used for this. At this point a new hosting alternative was needed. After some inspection a free and better alternative was selected, Netlify. This was suggested for serving Hugo based websites and it had a free hosting and deployment service. 
 
+In addtion to this I was able to start and finish working on the alpha machine inside the OSCP lab.
+
 __Achieved__
-Even though I did not work on Buffer Overflow as I originally planned I learned a lot about deploying a website and about the different options that are available for this. I discovered Netlify and I furthered my understanding of the Hugo framework.
+Even though I did not work on Buffer Overflow as I originally planned I learned a lot about deploying a website and about the different options that are available for this. I discovered Netlify and I furthered my understanding of the Hugo framework. Worked on OCCP lab.
 
 __To improve__
 Before choosing a development stack it would be recommended to inspect the recommended infrastructure to deploy it on as a live environment is different from a controlled local environment deployment.
@@ -158,23 +160,24 @@ Start working on OSCP material more and have a better format to transform the no
 
 ### Week 11
 16/11/2020 - 20/11/2020
-__Goal -PWK book exercises–__
+__Goal -PWK book exercises + OSCP lab–__
 
-During this week I worked on the exercises from the book. 
+During this week I worked on the exercises from the book and continued working on the lab machines. I was able to scan a number of machines  and to better understand how to take advantage of the machines. The trick is to look at more machines not to focus at one at a time.
+
 __Achieved__
-Worked on the first 6/25 chapters exercises
+Worked on the first 6/25 chapters exercises. Worked lab OSCP 
 __To improve__
-Work on machines inside the lab
+Work more on machines inside the lab
 
 ### Week 12
 23/11/2020 - 27/11/2020
 
 __Goal -PWK book exercises + OSCP lab–__
 
-I continued work on the exercises from the book 11.2.5(Buffer overflow on windows)/25 and I also finished a machine inside the lab.
+I continued work on the exercises from the book 11.2.5(Buffer overflow on windows)/25 and I continued working on the machines inside the lab.
 
 __Achieved__:
-Achieved  user shell on one machine inside the lab
+Multiple users and a root lab machine.
 
 __To improve__
 
@@ -185,7 +188,7 @@ Gain root access to the machine and work on making OSCP style reports
 
 __Goal - Lockpicking practice + Student presentation at TQ5–__
 
-Got the lock picking kit from the ISSD and started learning how to use it. Also the student presentation in TQ5 did not take place, no explenation was given to why but the extra time was used to keep working on the OSCP lab exercises.
+Got the lock picking kit from the ISSD and started learning how to use it. Also the student presentation in TQ5 did not take place, no explenation was given to why but the extra time was used to keep working on the OSCP lab machines.
 
 __Achieved__
 
@@ -219,9 +222,11 @@ In addition to this worked together with the project team on finishing
 __Achieved__: Found a number of vulnerabilities inside the system that was tested. Worked on our team red teaming skills
 
 __To improve__
+Start updating the portofolio website
 
 ### Week 16
-__Goal - Red Team vs Blue Team –__
+__Goal - Update Portofolio + work on machines + continue lab –__
+
 
 __Achieved__
 

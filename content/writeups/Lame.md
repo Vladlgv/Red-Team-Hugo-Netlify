@@ -145,6 +145,7 @@ After looking for something to use to exploit samba I started looking on searchs
 
 
 Sadly i did not find what I was looking for but I also tried metasploit just be sure 
+
 ----
 ### Step 3 - Foothold
 ---
