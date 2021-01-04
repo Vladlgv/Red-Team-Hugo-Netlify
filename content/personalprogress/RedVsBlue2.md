@@ -139,9 +139,9 @@ Next the team tried to do a repeater injection with Buirpsuite in the hopes that
 
 ### Group report and presentation
 
-For the last stage of the event the teams were required to present their findings. To this end we created a document with our findings and a group report. As most of the findings we had were the accomplishment of the group we decided to state our work as such. These findings can be found in the 
+For the last stage of the event the teams were required to present their findings. To this end we created a document with our findings and a group report. These findings can be found in the 
 <!-- TODO: Still need to make the redteam document and include it in here -->
-[group document](https://docs.google.com/document/d/1rLfha397ISHSdsXsOmb3bVRcS5ejauKUF-q4mHzbsIg/edit#) and the [group presentation](https://docs.google.com/presentation/d/1e0r3fgg7E5uUCzh1KgLpszqBzHL6_j9aalGyg7PmM0k/edit#slide=id.ga50b1d7492_6_2)
+[group document](https://docs.google.com/document/d/1rLfha397ISHSdsXsOmb3bVRcS5ejauKUF-q4mHzbsIg/edit#).
 
 
 
