@@ -18,7 +18,7 @@ As usual the first part of the hack is the enumeration. For this I used a new to
 
 -----
 ------
-```
+```bat
 sudo masscan -e tun0 -p0-65535 --max-rate 500 10.10.10.61
 
 Starting masscan 1.0.5 (http://bit.ly/14GZzcT) at 2020-11-09 16:29:04 GMT
@@ -46,7 +46,7 @@ To further investigate I used dirbuster to see if I can find any intersting file
 
 -----
 ------
-```
+```bat
 Gobuster v3.0.1
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 ===============================================================
@@ -85,7 +85,7 @@ What I found was that the page was vulnerable to sql injections. I intercepted t
 
 -----
 ------
-```
+```bat
 sqlmap -r lcarss.req -p query --dbms mysql --risk 1 --level 1 
 
 Parameter: query (GET)
@@ -133,7 +133,7 @@ At this point I got user access on the machine but I did not have a proper user,
 
 -----
 ------
-```
+```bat
 As you take a look around at your surroundings you realise there is something wrong.
 This is not the Enterprise!
 As you try to interact with a console it dawns on you.
@@ -176,7 +176,7 @@ and in the result found the password
 
 ----
 ----
-```
+```bat
 __libc_start_main(0x56652c91, 1, 0xffdc65b4, 0x56652d30 <unfinished ...> 
 ---SNIP--
 fgets( 

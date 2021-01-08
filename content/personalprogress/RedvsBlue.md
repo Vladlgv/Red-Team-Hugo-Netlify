@@ -14,7 +14,7 @@ The event was split into 3 parts the first one in the morning until 11:45 where 
 
 ### Applications to test
 
-```
+```javascript
 Realtime Message Web Application
 10.10.1.114
 1472_Client1-VLAN
@@ -23,7 +23,7 @@ User account can be created. Admin functionality not yet added
 ```
 
 
-```
+```javascript
 An online banking application
 10.10.2.128-.130
 input filtering, password encryption, authentication
@@ -31,7 +31,7 @@ test account             username: test            password: testing
 1473_Client2-VLAN
 ```
 
-```
+```javascript
 Security camera application
 10.10.2.137 - 139
 1473_Client2-VLAN

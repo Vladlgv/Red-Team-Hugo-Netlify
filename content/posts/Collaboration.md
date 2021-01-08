@@ -1,5 +1,5 @@
 ---
-title: "Collaboration"
+title: "Communication and collaboration"
 date: 2020-12-14T17:06:01+01:00
 draft: false
 summary: "A description of the methods used to communicate with the team and with the shareholders"
@@ -29,7 +29,8 @@ Throughout the project we used the Canvas evaluation system to determine the ove
 
 ![image alt text](/Seclab-Project/peerreview.png)
 ##### [Figure 1.0 - Peer review ] 
-
+![image alt text](/Seclab-Project/Feedback2.png)
+##### [Figure 2.0 - Peer review ]
 As it can be seen throughout the project my teammates have given me positive feedback and were satisfied with the work that I have done throughout the project.
 
 ## Shareholder Feedback

