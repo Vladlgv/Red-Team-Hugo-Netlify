@@ -16,11 +16,11 @@ The goal of lock picking is as simple as to open a lock. Another more important 
 #####  __Why would this skill be useful for a penetration tester__ ?
 
 ---------
-The answer to that question is a bit more complex. Red teaming as a discipline is composed of three major areas digital penetration, social engineering/penetration and hardware penetration. The goal of this minor is to teach us how to become better professionals in our chosen discipline. Therefore, on top of practicing the hardest but most marketable of the three areas digital discipline I chose to also practice physical penetration.
+The answer to that question is a bit more complex. Red teaming as a discipline is composed of three major areas digital penetration, social engineering/penetration, and hardware penetration. The goal of this minor is to teach us how to become better professionals in our chosen discipline. Therefore, on top of practicing the hardest but most marketable of the three areas of digital discipline I chose to also practice physical penetration.
 
-The advantage of being able to access physical parts of the target infrastructure are quite massive. Being able to access the  routers, switches, servers or personal computers of a target is by itself a vulnerability. From this point on one can plant bugs, reset or delete information directly from the hardrive, disrupt the functions of the network or simply monitor the target.
+The advantage of being able to access physical parts of the target infrastructure is quite massive. Being able to access the routers, switches, servers or personal computers of a target is by itself a vulnerability. From this point on one can plant bugs, reset or delete information directly from the hard drive, disrupt the functions of the network, or simply monitor the target.
 
-As a result of this knowledge this part of the infrastructure is usually locked away in a room secured by a keycard or by a lock. More often than not companies don't take the time in investing in quality locks, all it takes is a the most minimal of lock picking skill and the tools for the craft.
+As a result of this knowledge, this part of the infrastructure is usually locked away in a room secured by a keycard or by a lock. More often than not companies don't take the time in investing in quality locks, all it takes is the most minimal of lock picking skill and the tools for the craft.
 
 Therefore learning how to lock pick could one day make the difference between a successful penetration test that will lead a company to improve their security or an unbelievable report that the company will discard as a purely theoretical threat leaving their systems vulnerable and the services provided lackluster.
 
@@ -28,7 +28,7 @@ Therefore learning how to lock pick could one day make the difference between a 
 
 The first step of the process is to find a lock picking set. The good news was that buying a lock picking set was unnecessary as the Fontys ISSD already had 2 kits. The bad news was that the lock picking set was more popular than anticipated and it took 3 weeks until borrowing the kit at ISSD was possible.
 
-After getting a set the next important part is understanding what all the picks are used for and how to use/ train with them. For this I have consulted multiple sources but out of all the websites that I looked through the [art-of-lockpicking](https://www.art-of-lockpicking.com/types-of-lock-picks-guide/) had the best guide that explained the different types of lock picks.
+After getting a set the next important part is understanding what all the picks are used for and how to use/ train with them. For this, I have consulted multiple sources but out of all the websites that I looked through the [art-of-lockpicking](https://www.art-of-lockpicking.com/types-of-lock-picks-guide/) had the best guide that explained the different types of lock picks.
 
 In addition to the website I also found some good video material that was just as useful and seeing it done on camera gave me a better idea of how to train with the lock picking set.
 

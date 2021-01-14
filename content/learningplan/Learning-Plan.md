@@ -8,15 +8,14 @@ summary: "A introduction and a plan on how the project will take place"
 ## 1.	Who I am:
 ****
 
-I am Vlad, I am a fourth year student, I started Fontys with the goal of becoming a programmer, as I kept studying and learning about new paths I discovered that I am more interested in networking and the backend part of the development process. That is why I looked for a specialization that delves in this. I chose Cybersecurity because it involved learning about networking, infrastructure and the way things work. I enjoy learning about the way system work and knowing little tricks and hacks to exploit this system. I had a great deal of fun (and a equal amount of frustration) learning about the different attack methods and how hackers think and make their attacks. 
-Until now I have completed my first 3 years of studies, I have followed the software engineering track where I have learned about web development, application development, programming principles, design patterns and  many different programming languages such as c#, python, java, php, GoLang , C, C++. All this was done through practical projects, at this point I have completed all 3 major projects PROCP, PROP and PROEP all of them requiring us to make a project together with a group teaching us about software development with a group. 
+My name is Vlad. I am a fourth year student. When I started at Fontys my goal was to become a programmer, but as I kept studying and learning about new paths, I discovered that I am more interested in networking and the backend part of the development process. Which is why I chose Cybersecurity as my specialization, it involves learning about networking, infrastructure and the way things work.
+I enjoy learning about the way systems work and knowing little tricks and hacks to exploit these systems. I had a great deal of fun (and an equal amount of frustration) learning about the different attack methods and how hackers think and make their attacks. So far I have completed the first 3 years of my studies, where I followed the software engineering track. There I have learnt about web development, application development, programming principles, design patterns and many different programming languages such as C#, python, java, php, GoLand, C and C++. I have learnt these things through practical projects, of which I have already completed all three major ones PROCP, PROP and PROEP. Each of them requiring me to make a project together with a group teaching us about software development.
 
-In addition to my software development track   I have chosen cybersecurity as my main specialization. I have completed both the offensive and defensive specializations where I have learned many things that I hope to build upon in this minor, such as writing a proper report how to structure a Pentest, different attack techniques such as XSS , buffer overflow,  phishing, SQL injection, cross site scripting etc. But also, how to defend a system and how it is build therefore learning how to better use virtual environments, networking topologies, using DMZs, network sniffers and IDS like snort and different kinds of tools. 
+In addition to my software development track I have chosen cybersecurity as my main specialization. I have completed both the offensive and defensive specializations where I have learnt many things that I hope to build upon in this minor, such as writing a proper report, how to structure a Pentest, different attack techniques such as XSS, buffer overflow, phishing, SQL injection and cross site scripting. But also, how to defend a system and how it is built therefore learning how to better use virtual environments, networking topologies, using DMZs, network sniffers and IDS like snort and different kinds of tools.
+On top of all that, I also had an internship with a cybersecurity-based assignment, here I started learning more about security engineering. I learned how DevOps is used for automation and securing of the development process, how tests are automated, how cloud, containers and monitoring are tied together and how security software is made. Based on all the things I have learnt throughout the years I have concluded that the things that I enjoy the most are programming, learning about new systems and exploiting them. At this point I am at an impasse as to what my ideal job would be.
+I like being a DevOps engineer but I also wish to become security analyst.
+Regardless, my ideal job would be a combination of a pen tester and a DevOps engineer (which I don’t know if it exists yet) but at my current level I know that I want to pursue a OSPC certification which would help me either way to become a better security professional. Therefore, my plan for my future semester is to learn and take the OSCP exam.
 
-On top of all that, I also had an internship with a cybersecurity-based assignment, here I starting learning more about the security engineering. I learned how DevOps is used for automation and securing of the development process. How tests are automated, how cloud, containers and monitoring are tied together and how security software is made. 
-Based on all the things I have learned throughout the years I have concluded that the things that I enjoy the most are programming, learning about new systems and exploiting them. At this point I am at a impasse as to what my ideal job would be I like being a DevOps engineer but I also wish to become security analyst. 
-
-Regardless, my ideal job would be a combination of a pen tester and a DevOps engineer (which I don’t know if it exists yet) but at my current level I know that I  want to pursue a OSPC certification which would help me either way to become a better security professional. Therefore, my plan for my future semester is to learn and take the OSCP exam.
 
 
  
@@ -125,25 +124,25 @@ Week 17 (11/01 – 15/01) |	Physical penetration and Social approach
 ***
 
 
-| Week          | Goal          |
-| ------------- |:-------------:
-|Week 1 (31/08 – 04/09)| Find out agenda |
-Week 2 (07/09 – 11/09) |	Hack the Box + kali Linux |
-Week 3 (14/09 – 18/09) |	Hack a box + Report Website
-Week 4 (21/09 – 25/09) |	Hack the box + Report Website
-Week 5 (28/09 – 02/10) |	Buy OSCP lab time; Read Documentation
-Week 6 (05/10 – 09/10) |	OSCP - Start Lab
-Week 7 (12/10 – 16/10) |	OSCP - Buffer Overflow
-Week 8 (19/10 – 23/10) |	OSCP –  work on lab exercises + start OSCP lab
-Week 9 (02/11 – 06/11) |	Update Portfolio + OSCP lab machines
-Week 10 (09/11 – 13/11) |	OSCP – Buffer Overflow windows
-Week 11 (16/11 – 20/11) |	OSCP- Buffer Overflow lab machines practice + 5 chapter lab exercises.
-Week 12 (23/11 – 27/11) |	OSCP – 4 machines minimum user in lab + 5 chapters lab exercises 
-Week 13 (30/11 – 04/12) |	Start Lock picking + OSCP – Lab exercises chapters + OSCP lab machines
-Week 14 (07/12 – 11/12) |	Lock picking + OSCP lab machines 
-Week 15 (14/12 – 18/12) |	Red team vs blue team Event 2 + OSCP lab machines
-Week 16 (04/01 – 08/01) |	Report Website portfolio work on OSCP lab exercises
-Week 17 (11/01 – 15/01) |	Report Website portfolio work on OSCP lab exercises
+| Week          | Goal          | 
+| ------------- |:-------------: 
+|Week 1 (31/08 – 04/09)| [Find out agenda]({{< ref "/personalprogress/WeeklyAdvancement" >}}) |
+Week 2 (07/09 – 11/09) |	[Hack the Box + kali Linux]({{< ref "/writeups/Sneaky" >}}) |
+Week 3 (14/09 – 18/09) |	[Hack a box + Report Website]({{< ref "/writeups/Lame" >}})
+Week 4 (21/09 – 25/09) |	[Hack the box + Report Website]({{< ref "/writeups/SwagBox" >}})
+Week 5 (28/09 – 02/10) |	[Buy OSCP lab time; Read Documentation]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+Week 6 (05/10 – 09/10) |	[OSCP - Start Lab]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+Week 7 (12/10 – 16/10) |	[OSCP - Buffer Overflow]({{< ref "/personalprogress/RedvsBlue" >}})
+Week 8 (19/10 – 23/10) |	[OSCP –  work on lab exercises + start OSCP lab]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+Week 9 (02/11 – 06/11) |	[Update Portfolio + OSCP lab machines]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+Week 10 (09/11 – 13/11) |	[OSCP – Buffer Overflow windows]({{< ref "/writeups/Enterprise" >}})
+Week 11 (16/11 – 20/11) |	[OSCP- Buffer Overflow lab machines practice + 5 chapter lab exercises.]({{< ref "/writeups/BrainFuck" >}})
+Week 12 (23/11 – 27/11) |	[OSCP – 4 machines minimum user in lab + 5 chapters lab exercises ]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+Week 13 (30/11 – 04/12) |	[Start Lock picking + OSCP – Lab exercises chapters + OSCP lab machines]({{< ref "/personalprogress/Lockpicking" >}})
+Week 14 (07/12 – 11/12) |	[Lock picking + OSCP lab machines ]({{< ref "/personalprogress/Lockpicking" >}})
+Week 15 (14/12 – 18/12) |	[Red team vs blue team Event 2 + OSCP lab machines]({{< ref "/personalprogress/RedvsBlue2" >}})
+Week 16 (04/01 – 08/01) |	[Report Website portfolio work on OSCP lab exercises]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+Week 17 (11/01 – 15/01) |	[Report Website portfolio work on OSCP lab exercises]({{< ref "/personalprogress/WeeklyAdvancement" >}})
 
 
 ### Classification of priorities 
@@ -158,11 +157,14 @@ As a result a initial prioritization classification of the activities would be:
 ## 2.5. Overall Plan Explanation
 ***
 
-For this semester I plan on following the OSCP certification path, but due to the limitation of 90 days of lab (maximum time you can have for the OSCP lab) the first weeks will be used in HackTheBox, a website that offers vulnerable machines and try to get into the ones that are similar to OSCP machines. A list of them can be found online, and this will serve as good practice with the software needed there. On top of that in the first weeks I want to make the structure of the website for the report so that I only must add onto it as time flies by. 
-For reporting the process, I have been inspired by the workshop of HackTheBox and I want to keep Cherry (text editor) notes on the hacking process of every machine and then migrate those into the website. For the website I was hoping to make a one pager that contains all the information with a few additional pages for References, Videos or any other materials that might be helpful for understanding the nature of the research. But the ideas for the website might change in accordance with the nature of the content.
-After the beginning weeks I plan to follow the OSCP curriculum that I have included in this document. It does go through most of the requirements of this course as shown in the previous Parallels table. Furthermore, the curriculum is well structured and it is possible that I might actually be focusing on different parts of it in different weeks (but overall, those will be the learning goals). 
-Something that I did not include in the planning were the vacation weeks. I will be working on the OSCP curriculum in those as well and most likely I will be taking the OSCP exam during the Christmas vacation. That is why after the 15th week I will start working on other unrelated subjects like something that interests me lockpicking, social analysis and if time permits android reversing.
+For this semester I plan on following the OSCP certification path. 
+However since one can only use the OSCP lab for 90 days, I will use the first weeks in HackTheBox, a website that offers vulnerable machines and try to get into the ones that are similar to OSCP machines. A list of them can be found online, and this will serve as good practice with the software needed. Next to that I want to make the structure of the website for the report so that I only need to add content into it as time passes. 
+For reporting the process, I have been inspired by the workshop of HackTheBox and I want to keep Cherry (text editor) notes on the hacking process of every machine and then migrate those into the website. 
+For the website I was hoping to make a one pager that contains all the information with a few additional pages for References, Videos or any other materials that might be helpful for understanding the nature of the research. But the ideas for the website might change in accordance with the nature of the content.
+After the beginning weeks I plan to follow the OSCP curriculum that I have included in this document. It does cover most of the requirements of this course as shown in the previous Parallels table. Furthermore, the curriculum is well structured and it is possible that I might actually be focusing on different parts of it in different weeks (but overall, those will be the learning goals). Something that I did not include in the planning were the vacation weeks. I will be working on the OSCP curriculum in those as well and most likely I will be taking the OSCP exam during the Christmas vacation. 
+That is why after the 15th week I will start working on other unrelated subjects like something that interests me lockpicking, social analysis and if time permits android reversing. 
 The plan stated above might have slight deviation as time goes as I am not sure how the OSCP course and materials are divided and as such I will have to follow the order that is set in their learning materials. However, I believe that the learning points will be the same, I will cover the suggested curriculum and I should be prepared for any Red Teaming Graduation project.
+
 
  
 

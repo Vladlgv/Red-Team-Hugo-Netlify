@@ -6,6 +6,10 @@ summary: "A week by week explenation of the activities underwent. Will add links
 ---
 
 
+### OSCP Proof
+Because the PWK course has very strict rules about their materials being distributed online I cannot post my work on the OSCP lab machines here but they will be attached together with the final deliverable (website in zip form), Lab Machines and Manual exercises on Canvas.
+
+
 ### Week 1
 31/08/2020 - 04/09/2020
 
@@ -54,7 +58,7 @@ Work more on Hack the box
 
 __Goal – Create the portfolio website and report on the current status of the learning process-__
 
-For this week the goal was to create the portfolio website. I first started by crating a React website but that proved to be more difficult than anticipated since I only knew the basics of React. I spent the rest of the week trying to learn React and concluded it will take too long to build a website from scratch for the project. I started researching other website platforms for the portfolio and I managed to find something that I could start working on that was only css, javascript and html based.
+For this week the goal was to create the portfolio website. I first started by creating a React website but that proved to be more difficult than anticipated since I only knew the basics of React. I spent the rest of the week trying to learn React and concluded it will take too long to build a website from scratch for the project. I started researching other website platforms for the portfolio and I managed to find something that I could start working on that was only css, javascript and html based.
 
 __Achieved__
 
@@ -100,9 +104,10 @@ Attempt more machines in the OSCP lab, finish reading the Documentaiton, start w
 
 __Goal -Working on OSCP lab–__
 
-For this week I started working from the OSCP lab material. Getting used to how to go through the lab and how to proceed. I scanned parts of the lab and tried to find interesting or potentially vulnerable machines. While I did not start any machine in particular I did learn how to go through the different machines of the lab and how it was structured. This understanding helped me in bettering myself and my skill set. 
+For this week I started working from the OSCP lab material. Getting used to how to go through the lab and how to proceed. I scanned parts of the lab and tried to find interesting or potentially vulnerable machines. While I did not start any machine in particular I did learn how to go through the different machines of the lab and how it was structured. This understanding helped me in bettering myself and my skill set.
 
-In addition to that I wrote one Write-Up from the  HTB machines that went through.
+In addition to that I wrote one Write-Up from the HTB machines that I went through.
+
 
 __Achieved__
 I started working in the OSCP lab and I 
@@ -114,12 +119,12 @@ __To improve__
 __Goal - Red Team vs Blue Team –__
  
 
-The goal of this week is to prepare and to attend the Red team vs Blue team event. During this event the red team had to attempt to hack in to the websites created by the security engineers. This proved to be a challenge as most of the applications, at least the ones that we tested were not finished or not even running, therefore there was little we could exploit. Regardless the experience was quite interesting and insightful teaching us to organize ourself as a Red Team, work as a team with other classmates and share knowledge about hte way we approach a hack. 
+The goal of this week was to prepare and to attend the Red team vs Blue team event. During this event the red team had to attempt to hack in to the websites created by the security engineers. This proved to be a challenge as most of the applications, at least the ones that we tested were not finished or not even running, therefore there was little we could exploit. Regardless the experience was quite interesting and insightful teaching us to organize ourself as a Red Team, work as a team with other classmates and share knowledge about the way we approach a hack.
 
 
 __Achieved__
 
-After stuggling for the first part of the day to connect to Seclab as my credentials did not work. For the second part of the day I have scanned and found some vulnerabilites on one of the machines but sadly was not able to exploit it as we did not have the necessary time to attack it. As a result most of the day was spent enumerating, searching for exploits and trying different SQL injections and automated scripts based on the little that we found.
+After struggling for the first part of the day to connect to Seclab as my credentials did not work. For the second part of the day I have scanned and found some vulnerabilites on one of the machines but sadly was not able to exploit it as we did not have the necessary time to attack it. As a result most of the day was spent enumerating, searching for exploits and trying different SQL injections and automated scripts based on the little that we found.
 
 __To improve__
 
@@ -188,7 +193,7 @@ Gain root access to the machine and work on making OSCP style reports
 
 __Goal - Lockpicking practice + Student presentation at TQ5–__
 
-Got the lock picking kit from the ISSD and started learning how to use it. Also the student presentation in TQ5 did not take place, no explenation was given to why but the extra time was used to keep working on the OSCP lab machines.
+Got the lock picking kit from the ISSD and started learning how to use it. Also the student presentation in TQ5 did not take place, no explanation was given as to why but the extra time was used to keep working on the OSCP lab machines.
 
 __Achieved__
 
@@ -203,7 +208,7 @@ Put more work into OSCP lab machines.
 
 __Goal - Preparation for the event + OSCP lab machines + Lockpicking practice–__
 
-Being the last week the lock picking set could be used one day was spent preparing all the locks and filming myself for proof. For next weeks event added a virtual machine to use during the event, made sure connecting to it is possible. In addition a list of commands for the event where prepared and additional resources where noted.
+Being the last week the lock picking set could be used one day was spent preparing all the locks and filming myself for proof. For next weeks event added a virtual machine to use during the event, made sure connecting to it is possible. In addition a list of commands for the event were prepared and additional resources were noted.
 
 Continued work on the machine from 2 weeks without getting root shell, decided to work on another machine.
 
@@ -226,8 +231,18 @@ Start updating the portofolio website
 
 ### Week 16
 __Goal - Update Portofolio + work on machines + continue lab –__
-
+Improved Project page, added more content to the weekly advancement, wrote a page for communication and methodical work justification, made a page for procedural approach justification.
 
 __Achieved__
-
+Updated version of website
 __To improve__
+Make changes based on the feedback that the mentors gave.
+
+### Week 17
+__Goal - Update Portofolio + work on machines + continue lab –__
+
+Improved pages based on feedback from mentors, improved technical justification for website
+__Achieved__
+Final version of website 
+__To improve__
+It is done.

@@ -6,11 +6,11 @@ summary : "Description of the first red vs blue team event. "
 ---
 
 ## Event 1
-The  Red vs Blue event took place on Monday 26/10/2020. During this event, the red teamers attacked the applications built by the security engineers. The Blue teamers were tasked with intercepting and identifying the attacks carried out by the red team. As a red teamer I had to run a number of tests to try and find vulnerabilities inside the applications.
+The Red vs Blue event took place on Monday 26/10/2020. During this event, the red teamers attacked the applications built by the security engineers. The Blue teamers were tasked with intercepting and identifying the attacks carried out by the red team. As a red teamer I had to run a number of tests to try and find vulnerabilities inside the applications.
 
-As the event started there was some confusion as to how the red team will organize itself as the teachers did not take any responsibility for this. As such some of the students created a Dicord  channel where we divided the applications among the teams that we formed. I joined team 5.
+As the event started there was some confusion as to how the red team will organize itself as the teachers did not take any responsibility for this. As such some of the students created a Discord channel where we divided the applications among the teams that we formed. I joined team 5.
 
-The event was split into 3 parts the first one in the morning until 11:45 where we were allowed to attack the machines. Sadly during this part I was not able to connect to my Seclab account due to probably someone else changing my password. In the end I talked with one of my teammates and I ended up using his account to create a kali machine inside the VLAN that the target machines were deployed in.
+The event was split into 3 parts the first one in the morning until 11:45 where we were allowed to attack the machines. Sadly during this part I was not able to connect to my Seclab account probably due to someone else changing my password. In the end I talked with one of my teammates and I ended up using his account to create a kali machine inside the VLAN that the target machines were deployed in.
 
 ### Applications to test
 
@@ -44,7 +44,7 @@ Accounts not yet implemented, if needed can be implemented before event
 
 We could not find any information on the security camera as we found no systems or web services running other than MySQL.
 
-Using nmap we find that the machine at  10.10.2.138 has port 3306 (MySql) database open. We did not research any further since we had no idea what it was used for.
+Using nmap we found that the machine at 10.10.2.138 has port 3306 (MySql) database open. We did not research any further since we had no idea what it was used for.
 
 
 ### An online Bancking Applicaiton 
@@ -72,7 +72,7 @@ There are known vulnerabilities for that version of apache including information
 ![PoC searched](/RedvsBlue/PossibleVulnerability.png?style=centerme)
 #### [Figure 2.4 - ApachePossible Vulnerability] 
 
-While no Proof of Concept was found for the apache a number of vulnerabilites where found on the offcial page for Apache CVEs.
+While no Proof of Concept was found for the apache a number of vulnerabilities where found on the official page for Apache CVEs.
 
 ![Missing Multi Factor Authentification](/RedvsBlue/MultiFactorBroken.png?style=centerme)
 #### [Figure 2.5 - Multi Factor Authentification missing] 
