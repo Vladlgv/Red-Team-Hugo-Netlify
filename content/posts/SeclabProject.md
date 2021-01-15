@@ -1,5 +1,5 @@
 ---
-title: "Seclab-Project"
+title: "Seclab-Project (Technical Proof)"
 date: 2020-12-08T13:10:54+01:00
 draft: false
 summary: "

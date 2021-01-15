@@ -235,6 +235,7 @@ Improved Project page, added more content to the weekly advancement, wrote a pag
 
 __Achieved__
 Updated version of website
+
 __To improve__
 Make changes based on the feedback that the mentors gave.
 
@@ -242,7 +243,9 @@ Make changes based on the feedback that the mentors gave.
 __Goal - Update Portofolio + work on machines + continue lab –__
 
 Improved pages based on feedback from mentors, improved technical justification for website
+
 __Achieved__
 Final version of website 
+
 __To improve__
 It is done.
