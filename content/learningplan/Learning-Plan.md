@@ -126,23 +126,23 @@ Week 17 (11/01 – 15/01) |	Physical penetration and Social approach
 
 | Week          | Goal          | 
 | ------------- |:-------------: 
-|Week 1 (31/08 – 04/09)| [Find out agenda]({{< ref "/personalprogress/WeeklyAdvancement" >}}) |
-Week 2 (07/09 – 11/09) |	[Hack the Box + kali Linux]({{< ref "/writeups/Sneaky" >}}) |
-Week 3 (14/09 – 18/09) |	[Hack a box + Report Website]({{< ref "/writeups/Lame" >}})
-Week 4 (21/09 – 25/09) |	[Hack the box + Report Website]({{< ref "/writeups/SwagBox" >}})
-Week 5 (28/09 – 02/10) |	[Buy OSCP lab time; Read Documentation]({{< ref "/personalprogress/WeeklyAdvancement" >}})
-Week 6 (05/10 – 09/10) |	[OSCP - Start Lab]({{< ref "/personalprogress/WeeklyAdvancement" >}})
-Week 7 (12/10 – 16/10) |	[OSCP - Buffer Overflow]({{< ref "/personalprogress/RedvsBlue" >}})
-Week 8 (19/10 – 23/10) |	[OSCP –  work on lab exercises + start OSCP lab]({{< ref "/personalprogress/WeeklyAdvancement" >}})
-Week 9 (02/11 – 06/11) |	[Update Portfolio + OSCP lab machines]({{< ref "/personalprogress/WeeklyAdvancement" >}})
-Week 10 (09/11 – 13/11) |	[OSCP – Buffer Overflow windows]({{< ref "/writeups/Enterprise" >}})
-Week 11 (16/11 – 20/11) |	[OSCP- Buffer Overflow lab machines practice + 5 chapter lab exercises.]({{< ref "/writeups/BrainFuck" >}})
-Week 12 (23/11 – 27/11) |	[OSCP – 4 machines minimum user in lab + 5 chapters lab exercises ]({{< ref "/personalprogress/WeeklyAdvancement" >}})
-Week 13 (30/11 – 04/12) |	[Start Lock picking + OSCP – Lab exercises chapters + OSCP lab machines]({{< ref "/personalprogress/Lockpicking" >}})
-Week 14 (07/12 – 11/12) |	[Lock picking + OSCP lab machines ]({{< ref "/personalprogress/Lockpicking" >}})
-Week 15 (14/12 – 18/12) |	[Red team vs blue team Event 2 + OSCP lab machines]({{< ref "/personalprogress/RedvsBlue2" >}})
-Week 16 (04/01 – 08/01) |	[Report Website portfolio work on OSCP lab exercises]({{< ref "/personalprogress/WeeklyAdvancement" >}})
-Week 17 (11/01 – 15/01) |	[Report Website portfolio work on OSCP lab exercises]({{< ref "/personalprogress/WeeklyAdvancement" >}})
+|Week 1 (31/08 – 04/09)| [Find out agenda](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement) |
+Week 2 (07/09 – 11/09) |	[Hack the Box + kali Linux](https://red-team-hugo-vlad.netlify.app/writeups/Sneaky) |
+Week 3 (14/09 – 18/09) |	[Hack a box + Report Website](https://red-team-hugo-vlad.netlify.app/writeups/Lame)
+Week 4 (21/09 – 25/09) |	[Hack the box + Report Website](https://red-team-hugo-vlad.netlify.app/writeups/SwagBox)
+Week 5 (28/09 – 02/10) |	[Buy OSCP lab time; Read Documentation](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
+Week 6 (05/10 – 09/10) |	[OSCP - Start Lab](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
+Week 7 (12/10 – 16/10) |	[OSCP - Buffer Overflow](https://red-team-hugo-vlad.netlify.app/personalprogress/RedvsBlue)
+Week 8 (19/10 – 23/10) |	[OSCP –  work on lab exercises + start OSCP lab](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
+Week 9 (02/11 – 06/11) |	[Update Portfolio + OSCP lab machines](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
+Week 10 (09/11 – 13/11) |	[OSCP – Buffer Overflow windows](https://red-team-hugo-vlad.netlify.app/writeups/Enterprise)
+Week 11 (16/11 – 20/11) |	[OSCP- Buffer Overflow lab machines practice + 5 chapter lab exercises.](https://red-team-hugo-vlad.netlify.app/writeups/BrainFuck)
+Week 12 (23/11 – 27/11) |	[OSCP – 4 machines minimum user in lab + 5 chapters lab exercises ](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
+Week 13 (30/11 – 04/12) |	[Start Lock picking + OSCP – Lab exercises chapters + OSCP lab machines](https://red-team-hugo-vlad.netlify.app/personalprogress/Lockpicking)
+Week 14 (07/12 – 11/12) |	[Lock picking + OSCP lab machines ](https://red-team-hugo-vlad.netlify.app/personalprogress/Lockpicking)
+Week 15 (14/12 – 18/12) |	[Red team vs blue team Event 2 + OSCP lab machines](https://red-team-hugo-vlad.netlify.app/personalprogress/RedvsBlue2)
+Week 16 (04/01 – 08/01) |	[Report Website portfolio work on OSCP lab exercises](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
+Week 17 (11/01 – 15/01) |	[Report Website portfolio work on OSCP lab exercises](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement)
 
 
 ### Classification of priorities 
