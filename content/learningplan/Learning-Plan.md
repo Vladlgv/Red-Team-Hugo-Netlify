@@ -126,7 +126,7 @@ Week 17 (11/01 – 15/01) |	Physical penetration and Social approach
 
 | Week          | Goal          | 
 | ------------- |:-------------: 
-|Week 1 (31/08 – 04/09)| [Find out agenda](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement) |
+|Week 1 (31/08 – 04/09)|    [Find out agenda](https://red-team-hugo-vlad.netlify.app/personalprogress/WeeklyAdvancement) |
 Week 2 (07/09 – 11/09) |	[Hack the Box + kali Linux](https://red-team-hugo-vlad.netlify.app/writeups/Sneaky) |
 Week 3 (14/09 – 18/09) |	[Hack a box + Report Website](https://red-team-hugo-vlad.netlify.app/writeups/Lame)
 Week 4 (21/09 – 25/09) |	[Hack the box + Report Website](https://red-team-hugo-vlad.netlify.app/writeups/SwagBox)
