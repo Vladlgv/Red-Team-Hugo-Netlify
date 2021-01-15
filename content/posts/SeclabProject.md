@@ -45,12 +45,25 @@ To this end, we have chosen to use Trello as our main way of keeping track of ta
 
 After the meeting with the shareholders where we agreed upon our [user requirements](https://stichtingfontys.sharepoint.com/:w:/r/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/_layouts/15/Doc.aspx?sourcedoc=%7B8EB77DAB-8ED6-461A-8CDA-3BDED2BFF43C%7D&file=URS%20-%20MoSCoW.docx&action=default&mobileredirect=true&cid=ab2b59d1-38e4-4657-95df-7cf96498a677). In addition to this document I personally worked on the [Ethical analysis](https://stichtingfontys.sharepoint.com/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/Gedeelde%20documenten/Forms/AllItems.aspx?FolderCTID=0x012000F78CEB40F297C044A67ABC914FF42098&viewid=b359bf5d%2D7b13%2D4aa5%2D84c8%2D4b1c859463b6&id=%2Fsites%2FCyberSecurityMinor20192020%2DFHICTresearchanddevelopmentproject%2FGedeelde%20documenten%2FFHICT%20research%20and%20development%20project%2FTICT) and on the [Risk assesment](https://stichtingfontys.sharepoint.com/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fsites%2FCyberSecurityMinor20192020%2DFHICTresearchanddevelopmentproject%2FGedeelde%20documenten%2FFHICT%20research%20and%20development%20project%2FRiskRannkingAndMitigationTemplate&FolderCTID=0x012000F78CEB40F297C044A67ABC914FF42098) together with Alex Petrov and Tymek Angela.
 
+##### Personal Contribution
+- Organized meeting with shareholders
+- Worked together with the rest of the team on the [user requirements](https://stichtingfontys.sharepoint.com/:w:/r/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/_layouts/15/Doc.aspx?sourcedoc=%7B8EB77DAB-8ED6-461A-8CDA-3BDED2BFF43C%7D&file=URS%20-%20MoSCoW.docx&action=default&mobileredirect=true&cid=ab2b59d1-38e4-4657-95df-7cf96498a677) (I came with the document structure)
+- I made the [Ethical analysis](https://stichtingfontys.sharepoint.com/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/Gedeelde%20documenten/Forms/AllItems.aspx?FolderCTID=0x012000F78CEB40F297C044A67ABC914FF42098&viewid=b359bf5d%2D7b13%2D4aa5%2D84c8%2D4b1c859463b6&id=%2Fsites%2FCyberSecurityMinor20192020%2DFHICTresearchanddevelopmentproject%2FGedeelde%20documenten%2FFHICT%20research%20and%20development%20project%2FTICT)
+- [Risk assesment](https://stichtingfontys.sharepoint.com/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fsites%2FCyberSecurityMinor20192020%2DFHICTresearchanddevelopmentproject%2FGedeelde%20documenten%2FFHICT%20research%20and%20development%20project%2FRiskRannkingAndMitigationTemplate&FolderCTID=0x012000F78CEB40F297C044A67ABC914FF42098) together with Alex Petrov and Tymek Angela.
+
+
 
 ### Project definition week 3-4
 
 The goal of these two weeks were to crete the [Project Plan](https://stichtingfontys.sharepoint.com/:w:/r/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/_layouts/15/Doc.aspx?sourcedoc=%7B84BE18EB-7CA1-4A39-9C4E-F6990B9B5F3B%7D&file=project_plan_v1.docx&action=default&mobileredirect=true&cid=ff07e989-a71d-4143-ae88-0fc2b14a5ccd) based on the user requirements that the Product Owner and the Shareholders agreed on. To this end, all the prior documentation and meeting knowledge was used. 
 
 On top of creating the project plan we also started some of our initial research based on the sub-questions derived from the main research question. Together with Melanie Janssen, we worked on [" What data will be shown on the dashboard and how will it be presented?"](https://stichtingfontys.sharepoint.com/:w:/r/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/_layouts/15/Doc.aspx?sourcedoc=%7B58CA3EE7-8AA1-49AC-8F61-B878946F4D06%7D&file=Dashboard%20metrics.docx&action=default&mobileredirect=true&cid=6d4a7864-3eac-42d9-bb45-6c3ff32bc888)
+
+##### Personal Contribution
+
+- Worked along with the rest of the team on the [Project Plan](https://stichtingfontys.sharepoint.com/:w:/r/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/_layouts/15/Doc.aspx?sourcedoc=%7B84BE18EB-7CA1-4A39-9C4E-F6990B9B5F3B%7D&file=project_plan_v1.docx&action=default&mobileredirect=true&cid=ff07e989-a71d-4143-ae88-0fc2b14a5ccd)
+- Made a research document [research document](https://stichtingfontys.sharepoint.com/:w:/r/sites/CyberSecurityMinor20192020-FHICTresearchanddevelopmentproject/_layouts/15/Doc.aspx?sourcedoc=%7B58CA3EE7-8AA1-49AC-8F61-B878946F4D06%7D&file=Dashboard%20metrics.docx&action=default&mobileredirect=true&cid=6d4a7864-3eac-42d9-bb45-6c3ff32bc888) together with Melanie Janssen 
+
 
 ### Sprint 1, week 5-8 (Sep 28 -Oct 23)
 
@@ -71,6 +84,10 @@ Furthermore, after successfully setting up the server I was able to write a scri
 
 ![Working script](/Seclab-Project/Script_Working.png?style=centerme)
 ##### [Figure 1.3 - Working script] 
+
+##### Personal Contribution
+- Made script for finding all thick provisioned scripts
+- Worked with Marc to setup the esxi environment on the servers we received and helped with transporting the servers
 
 
 ### Sprint 2, week 9-12 (Nov 2 -Nov 27)
@@ -118,7 +135,10 @@ The goal of the survey was to find additional graphs and information to add to t
 
 In addition to working on the dashboard and survey as the group leader I was tasked with the communication between the group and the PO, I was responsible for communicating our meetings, questions, and necessary resources to conduct the project.
 
-
+##### Personal Contribution
+- Made Angular Dashboard.
+- Wrote, distributed and analyzed survey for dashboard.
+- Organized stand-up meetings.
 
 ### Sprint 3, week 13-17 (Nov 30 -Jan 18)
 
@@ -140,3 +160,44 @@ To keep track of the sprint goals we used the same method as before, Trello boar
 To keep track of the weekly tasks we conducted weekly meetings where I as the scrum leader together with the other members would decide how we would break down the major deliverable goals into smaller weekly assignments that we could track.
 
 Each task was assigned to the respective team member that is responsible for it and the time limit so we would keep the team focused on the deadlines. On top of this, the reason why we chose to keep track of the work through Trello boards is that it is easy to visualize the workload each member of the team participated with.
+
+
+During this sprint I continued work on the website but since it was decided that we will not have enough time to develop and implement it I switched my work on researching how to improve the Grafana dashboard to that end I researched how to add an identity server and I worked together with Loek to add alarm functionality on Grafana.
+
+![Sprint Goals](/Seclab-Project/TeamButton.png)
+##### [Figure 3.3 - Team communication feature]
+At the beginning of the project, one of the proposed features for the dashboard was an issue board or a communication medium between the students and the network administrators. Because in the later sprints the network administrators decided that this feature is no longer needed as they have enough communication channels we decided to add the current and most used one to the website.
+
+Originally we tried to add Teams directly to the website as a complete chat function but what was asked of us was just a connection to the current channel the "FHICT Netlab club". To achieve this we had to research different ways to link Teams through the website and how to use the Websites elements (the button in this case). In conjunction with the method for the website.
+
+![Sprint Goals](/Seclab-Project/TeamCom.png)
+##### [Figure 3.4 - Netlab Communicaiton channel]
+It was fully working but sadly the website deliverable had to be scraped and used just as research because the team decided together with the Product Owner that there is not enough time to fully develop, test, and implement the website due to the constraints that appeared with communicating with the network administrators and a few of our colleagues leaving the group.
+
+
+![Sprint Goals](/Seclab-Project/GrafanaGraphsInAngular.png)
+##### [Figure 3.5 - Addmin Alarms into the website]
+At the beginning of the sprint, before it was decided that the website should not be used as the main dashboard I also added the functionality needed to have the Graphs from Grafana used directly into the website. This proved to be a more useful and direct way to use the graphs over sending the data from Telegraf to our custom made graphs and interpreting the data ourselves.
+
+![Sprint Goals](/Seclab-Project/GrapgAlarms.png)
+##### [Figure 3.6 - Adding alarms to the Graphs]
+Once it was decided that the website solution cannot be continued I had to change my focus onto the Grafana dashboard. Which at this point became the main dashboard that we would deliver. Because it was set up by Loek I worked together with him to set up the alarms on the Grafana website and also researched how to implement the remaining functionalities for the dashboard directly in Grafana. The aforementioned functionality was alerting that we already implemented and logging using the credentials of the students. 
+
+![Sprint Goals](/Seclab-Project/IdentityServer.png)
+##### [Figure 3.7 - Grafana identity server configuration]
+One solution that I came up with as a result of the research was linking the identity servers used by the network administrators to hold the Netlab credentials as a base to login to the Grafana website. Afterward, together with Loek I found the configurations and documented the steps necessary to implement this functionality.
+
+![Sprint Goals](/Seclab-Project/IdentityServer2.png)
+##### [Figure 3.8 - Grafana identity server configuration]
+Sadly the configuration that we had did not work because the credentials that we got for our account inside the Production environment did not have sufficient credentials but with the proper credentials from the network administrators it would have worked.
+
+
+
+On top of that I worked on making the [dashboard  research document](https://teams.microsoft.com/l/file/EEE950C3-1FD6-4252-8CA1-BE104011B9D6?tenantId=c66b6765-b794-4a2b-84ed-845b341c086a&fileType=docx&objectUrl=https%3A%2F%2Fstichtingfontys.sharepoint.com%2Fsites%2FCyberSecurityMinor20192020-FHICTresearchanddevelopmentproject%2FGedeelde%20documenten%2FFHICT%20research%20and%20development%20project%2FDashboardResearchDocument.docx&baseUrl=https%3A%2F%2Fstichtingfontys.sharepoint.com%2Fsites%2FCyberSecurityMinor20192020-FHICTresearchanddevelopmentproject&serviceName=teams&threadId=19:5d69e2a976384993af588f7e4a8c8ca3@thread.skype&groupId=03769ec5-ba87-41ba-add8-d725dfd80e35). This document is used by the network administrators to understand how the dashboard works and what research went into the current solution.
+
+##### Personal Contribution
+- Added Grafana graphs to dashboard
+- Added team communication funtionality
+- Worked with Loek to add Graph alarms
+- Researched identity server implementation for Grafana
+- Made dashboard [dashboard  research document](https://teams.microsoft.com/l/file/EEE950C3-1FD6-4252-8CA1-BE104011B9D6?tenantId=c66b6765-b794-4a2b-84ed-845b341c086a&fileType=docx&objectUrl=https%3A%2F%2Fstichtingfontys.sharepoint.com%2Fsites%2FCyberSecurityMinor20192020-FHICTresearchanddevelopmentproject%2FGedeelde%20documenten%2FFHICT%20research%20and%20development%20project%2FDashboardResearchDocument.docx&baseUrl=https%3A%2F%2Fstichtingfontys.sharepoint.com%2Fsites%2FCyberSecurityMinor20192020-FHICTresearchanddevelopmentproject&serviceName=teams&threadId=19:5d69e2a976384993af588f7e4a8c8ca3@thread.skype&groupId=03769ec5-ba87-41ba-add8-d725dfd80e35)
