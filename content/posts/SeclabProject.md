@@ -74,11 +74,15 @@ As a result, the new goals of the sprint became to create PowerCLI scripts based
 
 My personal assignments during this sprint were to help communicate our problems with the test environment, create a PowerCLI script for the test environment, and start delving into creating a dashboard website.
 
-I helped with the setting up of the server and later on, we decided to move the physical server to a location from Fontys so we could set up an internet connection. Due to the location limitation finishing up the setup of the environment was left to Dane Marc. Afterward, we all worked together to test the connection into the test environment
+![Enviroment](/Seclab-Project/ESXI.png?style=centerme)
+
+##### [Figure 1.2.1 - Setting up server ESXI] 
+
+I helped with the setting up of the server and later on, we decided to move the physical server to a location from Fontys so we could set up an internet connection. Due to the location limitation (there was no network connection available) finishing up the setup of the environment was left to Dane Marc. Afterward, we all worked together to test the connection into the test environment
 
 ![Enviroment](/Seclab-Project/Connection_To_TestEnvironment.png?style=centerme)
 
-##### [Figure 1.2 - Test environemnt - vSphere] 
+##### [Figure 1.2.2 - Test environemnt - vSphere] 
 
 Furthermore, after successfully setting up the server I was able to write a script that enabled finding all the Thick provisioned machines inside our environment and gives a short message to alert the user of this. Due to the absolute lack of knowledge of Powershell, I found the development of this short script very educational and a bit harder than I originally thought it would be.
 
